@@ -1632,6 +1632,601 @@
       "delta": 2
     }
   ],
+  "buildRun": {
+    "id": "build-public-018",
+    "mode": "mock",
+    "status": "waiting-for-publication",
+    "startedAt": "10:24:26",
+    "currentStage": "package",
+    "summary": {
+      "zh": "公开文档已编译为 Revision 18 与 schema-v3 草案；流程正在等待 A3S Use 校验、锁定和发布。",
+      "en": "Public documents compiled into Revision 18 and a schema-v3 draft; the run is waiting for A3S Use validation, locking, and publication."
+    },
+    "stages": [
+      {
+        "id": "scope",
+        "sequence": 1,
+        "label": {
+          "zh": "范围准入",
+          "en": "Scope admission"
+        },
+        "authority": "Agentic Ontology",
+        "state": "complete",
+        "startedAt": "10:24:26",
+        "completedAt": "10:24:30",
+        "summary": {
+          "zh": "KnowledgeScope 只允许六份公开产品文档及其明确版本进入本次构建。",
+          "en": "The KnowledgeScope admits only six public product documents and their declared versions into this build."
+        },
+        "objectLabel": "KnowledgeScope",
+        "objectValue": "scope-public-v0.1-r6",
+        "facts": [
+          {
+            "label": {
+              "zh": "Workspace",
+              "en": "Workspace"
+            },
+            "value": {
+              "zh": "contra-sense / Agentic Ontology",
+              "en": "contra-sense / Agentic Ontology"
+            },
+            "state": "verified"
+          },
+          {
+            "label": {
+              "zh": "允许资料",
+              "en": "Admitted material"
+            },
+            "value": {
+              "zh": "6 份公开文档",
+              "en": "6 public documents"
+            },
+            "state": "verified"
+          },
+          {
+            "label": {
+              "zh": "格式与版本",
+              "en": "Formats and versions"
+            },
+            "value": {
+              "zh": "Markdown / MDX · v0.1 + next",
+              "en": "Markdown / MDX · v0.1 + next"
+            },
+            "state": "verified"
+          },
+          {
+            "label": {
+              "zh": "本次预算",
+              "en": "Build budget"
+            },
+            "value": {
+              "zh": "6 文档 · 2 语言 · 45 秒",
+              "en": "6 docs · 2 locales · 45 sec"
+            },
+            "state": "verified"
+          },
+          {
+            "label": {
+              "zh": "未准入",
+              "en": "Not admitted"
+            },
+            "value": {
+              "zh": "仓库正文、PDF、二进制附件",
+              "en": "Repository bodies, PDFs, binary attachments"
+            },
+            "state": "attention"
+          }
+        ],
+        "gate": {
+          "label": {
+            "zh": "范围门禁",
+            "en": "Scope gate"
+          },
+          "state": "passed",
+          "detail": {
+            "zh": "所有资料都命中显式白名单；构建过程不能自行扩大范围。",
+            "en": "Every document matched the explicit allow-list; the build cannot expand its own scope."
+          }
+        },
+        "stageReceipt": {
+          "issuer": "Agentic Ontology",
+          "state": "issued",
+          "digest": "sha256:scope-018-5f4c"
+        },
+        "notices": [
+          {
+            "zh": "公开演示不会读取源码或仓库位置。",
+            "en": "The public demo never reads source bodies or repository locations."
+          }
+        ]
+      },
+      {
+        "id": "evidence",
+        "sequence": 2,
+        "label": {
+          "zh": "证据构建",
+          "en": "Evidence build"
+        },
+        "authority": "A3S Parser",
+        "state": "complete",
+        "startedAt": "10:24:30",
+        "completedAt": "10:24:58",
+        "summary": {
+          "zh": "固定的 Parser generation 生成类型化证据、摘要与可追溯公开引用。",
+          "en": "A pinned Parser generation produced typed evidence, digests, and traceable public citations."
+        },
+        "objectLabel": "EvidenceManifest",
+        "objectValue": "evidence-public-018",
+        "facts": [
+          {
+            "label": {
+              "zh": "生产者 generation",
+              "en": "Producer generation"
+            },
+            "value": {
+              "zh": "A3S Parser · markdown@0.4.2（演示）",
+              "en": "A3S Parser · markdown@0.4.2 (demo)"
+            },
+            "state": "verified"
+          },
+          {
+            "label": {
+              "zh": "不可变资料版本",
+              "en": "Immutable document versions"
+            },
+            "value": {
+              "zh": "6 / 6 已固定",
+              "en": "6 / 6 pinned"
+            },
+            "state": "verified"
+          },
+          {
+            "label": {
+              "zh": "类型化证据",
+              "en": "Typed evidence"
+            },
+            "value": {
+              "zh": "41 项",
+              "en": "41 items"
+            },
+            "state": "verified"
+          },
+          {
+            "label": {
+              "zh": "公开引用覆盖",
+              "en": "Public citation coverage"
+            },
+            "value": {
+              "zh": "34 / 34 语义节点",
+              "en": "34 / 34 semantic nodes"
+            },
+            "state": "verified"
+          },
+          {
+            "label": {
+              "zh": "拒绝项",
+              "en": "Rejected items"
+            },
+            "value": {
+              "zh": "2 项不受支持的附件声明",
+              "en": "2 unsupported attachment declarations"
+            },
+            "state": "attention"
+          }
+        ],
+        "gate": {
+          "label": {
+            "zh": "证据完整性",
+            "en": "Evidence integrity"
+          },
+          "state": "passed",
+          "detail": {
+            "zh": "每项被接纳证据都绑定生产者 generation、资料摘要与公开引用。",
+            "en": "Every admitted evidence item binds its producer generation, document digest, and public citation."
+          }
+        },
+        "stageReceipt": {
+          "issuer": "Agentic Ontology",
+          "state": "issued",
+          "digest": "sha256:evidence-018-84b1"
+        },
+        "notices": [
+          {
+            "zh": "文档内容被当作不可信资料，不会改变任务权限。",
+            "en": "Document content is treated as untrusted data and cannot change task authority."
+          }
+        ]
+      },
+      {
+        "id": "review",
+        "sequence": 3,
+        "label": {
+          "zh": "提案复核",
+          "en": "Proposal review"
+        },
+        "authority": "Agentic Ontology",
+        "state": "complete",
+        "startedAt": "10:24:38",
+        "completedAt": "10:25:00",
+        "summary": {
+          "zh": "候选概念、关系和边界声明先经过确定性校验，再按风险策略决定是否需要人工复核。",
+          "en": "Candidate concepts, relations, and boundary claims passed deterministic checks before risk policy decided on human review."
+        },
+        "objectLabel": "SemanticProposalSet",
+        "objectValue": "proposal-set-018",
+        "facts": [
+          {
+            "label": {
+              "zh": "类型化提案",
+              "en": "Typed proposals"
+            },
+            "value": {
+              "zh": "13 项",
+              "en": "13 items"
+            },
+            "state": "verified"
+          },
+          {
+            "label": {
+              "zh": "已接受",
+              "en": "Accepted"
+            },
+            "value": {
+              "zh": "10 项",
+              "en": "10 items"
+            },
+            "state": "verified"
+          },
+          {
+            "label": {
+              "zh": "人工复核后接受",
+              "en": "Accepted after review"
+            },
+            "value": {
+              "zh": "1 项 · Agent 不回退图谱",
+              "en": "1 item · no Agent graph fallback"
+            },
+            "state": "verified"
+          },
+          {
+            "label": {
+              "zh": "已拒绝",
+              "en": "Rejected"
+            },
+            "value": {
+              "zh": "2 项 · 证据不足",
+              "en": "2 items · insufficient evidence"
+            },
+            "state": "attention"
+          },
+          {
+            "label": {
+              "zh": "自批准",
+              "en": "Self approval"
+            },
+            "value": {
+              "zh": "禁止",
+              "en": "Forbidden"
+            },
+            "state": "verified"
+          }
+        ],
+        "gate": {
+          "label": {
+            "zh": "语义准入",
+            "en": "Semantic admission"
+          },
+          "state": "passed",
+          "detail": {
+            "zh": "被接受语义均可追溯到已准入证据；拒绝项不会进入修订。",
+            "en": "Every accepted semantic item reaches admitted evidence; rejected items cannot enter the revision."
+          }
+        },
+        "stageReceipt": {
+          "issuer": "Agentic Ontology",
+          "state": "issued",
+          "digest": "sha256:proposal-018-1fc2"
+        },
+        "notices": [
+          {
+            "zh": "模型输出始终是提案，不是正式知识。",
+            "en": "Model output remains a proposal, never accepted knowledge."
+          }
+        ]
+      },
+      {
+        "id": "revision",
+        "sequence": 4,
+        "label": {
+          "zh": "修订编译",
+          "en": "Revision compile"
+        },
+        "authority": "Agentic Ontology",
+        "state": "complete",
+        "startedAt": "10:25:00",
+        "completedAt": "10:25:02",
+        "summary": {
+          "zh": "已接受提案被编译成不可变 Revision 18，并以 compare-and-swap 激活。",
+          "en": "Accepted proposals compiled into immutable Revision 18 and activated through compare-and-swap."
+        },
+        "objectLabel": "KnowledgeRevision",
+        "objectValue": "revision-demo-018",
+        "facts": [
+          {
+            "label": {
+              "zh": "父修订",
+              "en": "Parent revision"
+            },
+            "value": {
+              "zh": "Revision 17",
+              "en": "Revision 17"
+            },
+            "state": "verified"
+          },
+          {
+            "label": {
+              "zh": "候选修订",
+              "en": "Candidate revision"
+            },
+            "value": {
+              "zh": "Revision 18 · 不可变",
+              "en": "Revision 18 · immutable"
+            },
+            "state": "verified"
+          },
+          {
+            "label": {
+              "zh": "原子激活",
+              "en": "Atomic activation"
+            },
+            "value": {
+              "zh": "expected 17 → active 18",
+              "en": "expected 17 → active 18"
+            },
+            "state": "verified"
+          },
+          {
+            "label": {
+              "zh": "确定性重建",
+              "en": "Deterministic rebuild"
+            },
+            "value": {
+              "zh": "摘要一致",
+              "en": "Digest matched"
+            },
+            "state": "verified"
+          },
+          {
+            "label": {
+              "zh": "回退选择",
+              "en": "Rollback selection"
+            },
+            "value": {
+              "zh": "Revision 17 仍可寻址",
+              "en": "Revision 17 remains addressable"
+            },
+            "state": "verified"
+          }
+        ],
+        "gate": {
+          "label": {
+            "zh": "激活门禁",
+            "en": "Activation gate"
+          },
+          "state": "passed",
+          "detail": {
+            "zh": "激活成功前旧修订保持有效；并发写入不能产生两个 active head。",
+            "en": "The previous revision stays valid until activation succeeds; concurrent writes cannot create two active heads."
+          }
+        },
+        "stageReceipt": {
+          "issuer": "Agentic Ontology",
+          "state": "issued",
+          "digest": "sha256:revision-018-a62e"
+        },
+        "notices": [
+          {
+            "zh": "3D 图谱是 Revision 18 的人类审阅投影。",
+            "en": "The 3D graph is a human-review projection of Revision 18."
+          }
+        ]
+      },
+      {
+        "id": "package",
+        "sequence": 5,
+        "label": {
+          "zh": "认知包发布",
+          "en": "Package publication"
+        },
+        "authority": "A3S Use",
+        "state": "waiting",
+        "startedAt": "10:25:02",
+        "completedAt": null,
+        "summary": {
+          "zh": "schema-v3 草案已生成；安装、依赖解析、锁定与发布仍在等待 A3S Use 的权威回执。",
+          "en": "The schema-v3 draft exists; installation, dependency resolution, locking, and publication still await authoritative A3S Use receipts."
+        },
+        "objectLabel": "CognitivePackageDraft",
+        "objectValue": "contra-sense/agentic-ontology@0.1.0-demo.18",
+        "facts": [
+          {
+            "label": {
+              "zh": "包结构",
+              "en": "Package shape"
+            },
+            "value": {
+              "zh": "schema-v3 · knowledge profile",
+              "en": "schema-v3 · knowledge profile"
+            },
+            "state": "verified"
+          },
+          {
+            "label": {
+              "zh": "认知表面",
+              "en": "Cognitive surfaces"
+            },
+            "value": {
+              "zh": "OKF 预览 · Skill 计划",
+              "en": "OKF preview · Skill planned"
+            },
+            "state": "verified"
+          },
+          {
+            "label": {
+              "zh": "依赖校验",
+              "en": "Dependency validation"
+            },
+            "value": {
+              "zh": "未开始",
+              "en": "Not started"
+            },
+            "state": "pending"
+          },
+          {
+            "label": {
+              "zh": "安装与锁定",
+              "en": "Install and lock"
+            },
+            "value": {
+              "zh": "未安装 · 未锁定",
+              "en": "Not installed · not locked"
+            },
+            "state": "pending"
+          },
+          {
+            "label": {
+              "zh": "发布 generation",
+              "en": "Published generation"
+            },
+            "value": {
+              "zh": "尚未签发",
+              "en": "Not issued"
+            },
+            "state": "pending"
+          }
+        ],
+        "gate": {
+          "label": {
+            "zh": "A3S Use 生命周期",
+            "en": "A3S Use lifecycle"
+          },
+          "state": "waiting",
+          "detail": {
+            "zh": "Agentic Ontology 不能伪造安装或发布状态；没有 A3S Use 回执就保持未发布。",
+            "en": "Agentic Ontology cannot synthesize install or publication state; without an A3S Use receipt it remains unpublished."
+          }
+        },
+        "stageReceipt": {
+          "issuer": "A3S Use",
+          "state": "not-issued",
+          "digest": null
+        },
+        "notices": [
+          {
+            "zh": "当前右侧面板展示的是草案，不是可供 Agent 使用的 generation。",
+            "en": "The right panel shows a draft, not a generation an Agent can consume."
+          }
+        ]
+      },
+      {
+        "id": "evaluation",
+        "sequence": 6,
+        "label": {
+          "zh": "Agent 评估",
+          "en": "Agent evaluation"
+        },
+        "authority": "A3S Code",
+        "state": "blocked",
+        "startedAt": "—",
+        "completedAt": null,
+        "summary": {
+          "zh": "任务必须绑定已发布的精确 generation；当前没有可用 generation，因此会话明确失败且不回退读取图谱。",
+          "en": "The task must bind an exact published generation; none exists, so session opening fails explicitly and never falls back to the graph."
+        },
+        "objectLabel": "AgentTask",
+        "objectValue": "ontology-answer-eval-018",
+        "facts": [
+          {
+            "label": {
+              "zh": "generation 引用",
+              "en": "Generation reference"
+            },
+            "value": {
+              "zh": "缺失",
+              "en": "Missing"
+            },
+            "state": "attention"
+          },
+          {
+            "label": {
+              "zh": "锁定摘要",
+              "en": "Lock digest"
+            },
+            "value": {
+              "zh": "未签发",
+              "en": "Not issued"
+            },
+            "state": "pending"
+          },
+          {
+            "label": {
+              "zh": "任务状态",
+              "en": "Task state"
+            },
+            "value": {
+              "zh": "未启动",
+              "en": "Not started"
+            },
+            "state": "pending"
+          },
+          {
+            "label": {
+              "zh": "图谱回退",
+              "en": "Graph fallback"
+            },
+            "value": {
+              "zh": "禁止",
+              "en": "Disabled"
+            },
+            "state": "verified"
+          },
+          {
+            "label": {
+              "zh": "后续反馈",
+              "en": "Future feedback"
+            },
+            "value": {
+              "zh": "仅追加 LearningSignal",
+              "en": "Append-only LearningSignal"
+            },
+            "state": "verified"
+          }
+        ],
+        "gate": {
+          "label": {
+            "zh": "会话准入",
+            "en": "Session admission"
+          },
+          "state": "blocked",
+          "detail": {
+            "zh": "缺少 generation 或锁定摘要时，A3S Code 不会创建 Agent 会话。",
+            "en": "A3S Code does not create an Agent session without a generation and lock digest."
+          }
+        },
+        "stageReceipt": {
+          "issuer": "A3S Code",
+          "state": "not-issued",
+          "digest": null
+        },
+        "notices": [
+          {
+            "zh": "评估结果只能形成下一轮学习信号，不能直接修改 Revision 18。",
+            "en": "Evaluation results can only form a future learning signal; they cannot mutate Revision 18."
+          }
+        ]
+      }
+    ]
+  },
   "cognitivePackage": {
     "packageId": "contra-sense/agentic-ontology",
     "schemaVersion": 3,
@@ -1663,8 +2258,8 @@
     ]
   },
   "receipt": {
-    "buildId": "demo-d229989560e8",
-    "digest": "sha256:d229989560e841d6756cdcb941a73b5dde62a420241d660c9a60fbddcbde0cbc",
+    "buildId": "demo-cb625428579b",
+    "digest": "sha256:cb625428579bec52a2c9f7f52a7dec6b930f33edf3243d09c6e6395914cb4c3e",
     "nodeCount": 34,
     "edgeCount": 48,
     "eventCount": 8,

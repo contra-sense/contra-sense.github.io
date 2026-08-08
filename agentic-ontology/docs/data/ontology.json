@@ -1640,6 +1640,7 @@
     "status": "preview",
     "installState": "not-installed",
     "lockState": "not-locked",
+    "publicationState": "not-published",
     "surfaces": [
       {
         "kind": "okf",
@@ -1662,8 +1663,8 @@
     ]
   },
   "receipt": {
-    "buildId": "demo-b4c5e3f40b22",
-    "digest": "sha256:b4c5e3f40b22f5b76dc5c3eb9f273f9a48c4ce7fcdc57984a24d301dbd326e01",
+    "buildId": "demo-d229989560e8",
+    "digest": "sha256:d229989560e841d6756cdcb941a73b5dde62a420241d660c9a60fbddcbde0cbc",
     "nodeCount": 34,
     "edgeCount": 48,
     "eventCount": 8,

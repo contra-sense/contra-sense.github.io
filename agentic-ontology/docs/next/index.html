@@ -4,12 +4,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Agentic Ontology 下一版本文档 - Agentic Ontology Docs</title>
 <link href="/agentic-ontology/docs/static/css/styles.2acf4093cb.css" rel="stylesheet">
-<link rel="preload" href="/agentic-ontology/docs/static/js/async/route-023581cc2bfd.1a592a1626.js" as="script">
+<link rel="preload" href="/agentic-ontology/docs/static/js/async/route-023581cc2bfd.7e641ff1a0.js" as="script">
 <script defer src="/agentic-ontology/docs/static/js/styles.41e78f9ad1.js"></script>
 <script defer src="/agentic-ontology/docs/static/js/lib-react.a62c56e73e.js"></script>
 <script defer src="/agentic-ontology/docs/static/js/lib-router.ff07978680.js"></script>
 <script defer src="/agentic-ontology/docs/static/js/798.8c6725154b.js"></script>
-<script defer src="/agentic-ontology/docs/static/js/index.491d85020c.js"></script>
+<script defer src="/agentic-ontology/docs/static/js/index.43bc853353.js"></script>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Rspress v2.0.19">
 <link rel="alternate" hreflang="zh" href="https://contra-sense.github.io/agentic-ontology/docs/next/">
@@ -26,14 +26,15 @@
 <h2 class="rp-toc-include" id="计划中的演进"><a href="#计划中的演进" class="rp-header-anchor rp-link" aria-hidden="true">#</a>计划中的演进</h2>
 <ul>
 <li>在 <code>v0.1</code> 已实现的 disclosure projection 之上增加增量变化与可重放构建回执；</li>
-<li>使用已实现的 exact-revision Git tree 库适配器读取调用方授权的本地 object database，并继续增加面向大语料的可选检索/embedding index；当前 CLI 仍只接收本地文件；</li>
+<li>使用已实现的 exact-revision Git tree 库适配器读取调用方授权的本地 object database；当前 CLI 仍只接收本地文件；</li>
+<li>使用已实现的构建期 evidence discovery port 与确定性词法索引为大语料分批；外部 embedding 适配器按真实需求选择，不向 Agent 暴露检索接口；</li>
 <li>保持学习事件、图谱节点、关系和认知包预览的公开契约稳定；</li>
 <li>接入真实 A3S Use 0.3 host 与签名生命周期操作；现有 generation writer 只根据权威 lock、TUF receipt 与 Registry 快照记录依赖，不改变认知包状态；</li>
 <li>把真实引用覆盖、package generation 差异和使用反馈纳入持续评估；</li>
 <li>保持源码与内部实现不进入公开构建产物。</li>
 </ul>
 <p>内部图谱包含获批语义文案，不能直接复制到静态站。<code>v0.1</code> 已经从公开文档白名单重新构造最小展示契约；<code>next</code> 继续收紧证据与回执，而不是放宽图谱权限。</p>
-<p>请使用顶部版本选择器返回 <code>v0.1</code> 查看当前公开构建契约。</p><!--/$--></div><footer class="rp-doc-footer"><div class="rp-doc-footer__edit"><div class="rp-last-updated"><p>最后更新于<!-- -->: <span>2026/8/9 18:02:01</span></p></div></div><div class="rp-doc-footer__divider"></div><div class="rp-prev-next-page"><div class="rp-prev-next-page__placeholder"></div><a href="/agentic-ontology/docs/next/quick-start/" class="rp-prev-next-page__item rp-prev-next-page__next rp-link"><span class="rp-prev-next-page__item__desc">下一页</span><span class="rp-prev-next-page__item__title"><span>快速开始</span><svg width="1em" height="1em" viewBox="0 0 32 32" class="rp-prev-next-page__icon"><path fill="currentColor" d="M22 16 12 26l-1.4-1.4 8.6-8.6-8.6-8.6L12 6z"></path></svg></span></a></div></footer></main></div><aside class="rp-doc-layout__outline rp-scrollbar"><div class="rp-outline"><div class="rp-outline__title">目录<svg width="14" height="14" class="rp-progress-circle"><circle cx="7" cy="7" r="6" stroke-linecap="round" fill="none" stroke="var(--rp-c-divider-light)" stroke-width="2"></circle><circle cx="7" cy="7" r="6" stroke-linecap="round" fill="none" stroke="var(--rp-c-brand)" stroke-width="2" stroke-dasharray="37.69911184307752" stroke-dashoffset="37.69911184307752" transform="rotate(-90 7 7)" style="transition:stroke-dashoffset 0.3s"></circle></svg></div><nav class="rp-outline__toc rp-scrollbar"><a href="#计划中的演进" class="rp-toc-item rp-link" title="计划中的演进" style="padding-left:0" data-depth="0"><span class="rp-toc-item__text rp-doc">计划中的演进</span></a></nav><div class="rp-outline__divider"></div><div class="rp-outline__bottom"></div></div></aside></div></div>
+<p>请使用顶部版本选择器返回 <code>v0.1</code> 查看当前公开构建契约。</p><!--/$--></div><footer class="rp-doc-footer"><div class="rp-doc-footer__edit"><div class="rp-last-updated"><p>最后更新于<!-- -->: <span>2026/8/9 19:16:43</span></p></div></div><div class="rp-doc-footer__divider"></div><div class="rp-prev-next-page"><div class="rp-prev-next-page__placeholder"></div><a href="/agentic-ontology/docs/next/quick-start/" class="rp-prev-next-page__item rp-prev-next-page__next rp-link"><span class="rp-prev-next-page__item__desc">下一页</span><span class="rp-prev-next-page__item__title"><span>快速开始</span><svg width="1em" height="1em" viewBox="0 0 32 32" class="rp-prev-next-page__icon"><path fill="currentColor" d="M22 16 12 26l-1.4-1.4 8.6-8.6-8.6-8.6L12 6z"></path></svg></span></a></div></footer></main></div><aside class="rp-doc-layout__outline rp-scrollbar"><div class="rp-outline"><div class="rp-outline__title">目录<svg width="14" height="14" class="rp-progress-circle"><circle cx="7" cy="7" r="6" stroke-linecap="round" fill="none" stroke="var(--rp-c-divider-light)" stroke-width="2"></circle><circle cx="7" cy="7" r="6" stroke-linecap="round" fill="none" stroke="var(--rp-c-brand)" stroke-width="2" stroke-dasharray="37.69911184307752" stroke-dashoffset="37.69911184307752" transform="rotate(-90 7 7)" style="transition:stroke-dashoffset 0.3s"></circle></svg></div><nav class="rp-outline__toc rp-scrollbar"><a href="#计划中的演进" class="rp-toc-item rp-link" title="计划中的演进" style="padding-left:0" data-depth="0"><span class="rp-toc-item__text rp-doc">计划中的演进</span></a></nav><div class="rp-outline__divider"></div><div class="rp-outline__bottom"></div></div></aside></div></div>
     <div id="__rspress_modal_container"></div>
   </body>
 </html>

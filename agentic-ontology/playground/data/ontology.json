@@ -1,13 +1,13 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "product": "Agentic Ontology",
-  "mode": "mock",
-  "generatedAt": "2026-08-08T10:25:12+08:00",
+  "mode": "generated",
+  "generatedAt": "2026-08-09T07:39:38.790Z",
   "revision": {
-    "id": "revision-demo-018",
-    "label": "Revision 18",
+    "id": "public-revision-233f8c4d8eb7",
+    "label": "Public 233f8c4d",
     "channel": "v0.1",
-    "status": "demo-locked"
+    "status": "disclosed"
   },
   "privacy": {
     "sourceCodeIncluded": false,
@@ -22,10 +22,10 @@
   },
   "documents": [
     {
-      "id": "document-product",
+      "id": "document-overview",
       "title": {
-        "zh": "产品概览",
-        "en": "Product overview"
+        "zh": "Agentic Ontology 文档",
+        "en": "Agentic Ontology documentation"
       },
       "kind": "public-document",
       "publicUrl": "../docs/"
@@ -33,32 +33,23 @@
     {
       "id": "document-architecture",
       "title": {
-        "zh": "系统架构",
-        "en": "System architecture"
+        "zh": "架构",
+        "en": "Architecture"
       },
       "kind": "public-document",
       "publicUrl": "../docs/architecture/"
     },
     {
-      "id": "document-domain",
+      "id": "document-playground",
       "title": {
-        "zh": "领域模型",
-        "en": "Domain model"
+        "zh": "Playground",
+        "en": "Playground"
       },
       "kind": "public-document",
-      "publicUrl": "../docs/architecture/#domain-model"
+      "publicUrl": "../docs/playground/"
     },
     {
-      "id": "document-interface",
-      "title": {
-        "zh": "认知包交付契约",
-        "en": "Cognitive package delivery contract"
-      },
-      "kind": "public-document",
-      "publicUrl": "../docs/playground/#cognitive-package"
-    },
-    {
-      "id": "document-threat",
+      "id": "document-privacy",
       "title": {
         "zh": "公开数据边界",
         "en": "Public data boundary"
@@ -67,16 +58,149 @@
       "publicUrl": "../docs/privacy/"
     },
     {
-      "id": "document-evaluation",
+      "id": "document-quick-start",
       "title": {
-        "zh": "质量与评估",
-        "en": "Quality and evaluation"
+        "zh": "快速开始",
+        "en": "Quick start"
       },
       "kind": "public-document",
-      "publicUrl": "../docs/architecture/#quality"
+      "publicUrl": "../docs/quick-start/"
+    },
+    {
+      "id": "document-versioning",
+      "title": {
+        "zh": "版本管理",
+        "en": "Versioning"
+      },
+      "kind": "public-document",
+      "publicUrl": "../docs/versioning/"
     }
   ],
   "nodes": [
+    {
+      "id": "document-overview",
+      "kind": "document",
+      "label": {
+        "zh": "Agentic Ontology 文档",
+        "en": "Agentic Ontology documentation"
+      },
+      "summary": {
+        "zh": "Agentic Ontology v0.1 中文产品文档。",
+        "en": "English product documentation for Agentic Ontology v0.1."
+      },
+      "status": "verified",
+      "sourceRefs": [
+        "document-overview"
+      ],
+      "weight": 5
+    },
+    {
+      "id": "document-architecture",
+      "kind": "document",
+      "label": {
+        "zh": "架构",
+        "en": "Architecture"
+      },
+      "summary": {
+        "zh": "Agentic Ontology 的本体构建、图谱审阅与认知包交付边界。",
+        "en": "Ontology construction, graph review, and cognitive-package delivery boundaries in Agentic Ontology."
+      },
+      "status": "verified",
+      "sourceRefs": [
+        "document-architecture"
+      ],
+      "weight": 5
+    },
+    {
+      "id": "document-playground",
+      "kind": "document",
+      "label": {
+        "zh": "Playground",
+        "en": "Playground"
+      },
+      "summary": {
+        "zh": "Agentic Ontology 3D Playground 的交互与公开数据契约。",
+        "en": "Interaction and public-data contract for the Agentic Ontology 3D Playground."
+      },
+      "status": "verified",
+      "sourceRefs": [
+        "document-playground"
+      ],
+      "weight": 5
+    },
+    {
+      "id": "document-privacy",
+      "kind": "document",
+      "label": {
+        "zh": "公开数据边界",
+        "en": "Public data boundary"
+      },
+      "summary": {
+        "zh": "Playground 的白名单输入、允许字段与禁止发布内容。",
+        "en": "Allow-listed inputs, permitted fields, and blocked content for the Playground."
+      },
+      "status": "verified",
+      "sourceRefs": [
+        "document-privacy"
+      ],
+      "weight": 5
+    },
+    {
+      "id": "document-quick-start",
+      "kind": "document",
+      "label": {
+        "zh": "快速开始",
+        "en": "Quick start"
+      },
+      "summary": {
+        "zh": "在本地运行 Agentic Ontology 产品站、文档和 Playground。",
+        "en": "Run the Agentic Ontology product site, docs, and Playground locally."
+      },
+      "status": "verified",
+      "sourceRefs": [
+        "document-quick-start"
+      ],
+      "weight": 5
+    },
+    {
+      "id": "document-versioning",
+      "kind": "document",
+      "label": {
+        "zh": "版本管理",
+        "en": "Versioning"
+      },
+      "summary": {
+        "zh": "Agentic Ontology 文档的语言与版本路由规则。",
+        "en": "Language and version routes for Agentic Ontology documentation."
+      },
+      "status": "verified",
+      "sourceRefs": [
+        "document-versioning"
+      ],
+      "weight": 5
+    },
+    {
+      "id": "agentic-ontology",
+      "kind": "concept",
+      "label": {
+        "zh": "Agentic Ontology",
+        "en": "Agentic Ontology"
+      },
+      "summary": {
+        "zh": "Agentic Ontology 文档",
+        "en": "Agentic Ontology documentation"
+      },
+      "status": "accepted",
+      "sourceRefs": [
+        "document-overview",
+        "document-architecture",
+        "document-playground",
+        "document-privacy",
+        "document-quick-start",
+        "document-versioning"
+      ],
+      "weight": 14
+    },
     {
       "id": "workspace",
       "kind": "entity",
@@ -85,84 +209,31 @@
         "en": "Workspace"
       },
       "summary": {
-        "zh": "组织知识、授权与本体版本的隔离边界。",
-        "en": "Isolation boundary for organizational knowledge, grants, and ontology revisions."
+        "zh": "Workspace：组织知识、授权和本体版本的隔离权威。",
+        "en": "Workspace: authority boundary for organizational knowledge, grants, and ontology revisions."
       },
-      "status": "admitted",
+      "status": "accepted",
       "sourceRefs": [
-        "document-domain"
+        "document-architecture"
       ],
-      "weight": 9
+      "weight": 10
     },
     {
       "id": "knowledge-scope",
-      "kind": "entity",
+      "kind": "policy",
       "label": {
         "zh": "KnowledgeScope",
         "en": "KnowledgeScope"
       },
       "summary": {
-        "zh": "定义允许进入本体构建流程的资料范围与约束。",
-        "en": "Defines which material may enter ontology construction and under which constraints."
+        "zh": "Agentic Ontology 以 KnowledgeScope 约束资料准入，再把获批语义编译为可追溯、可版本化的知识修订。",
+        "en": "Agentic Ontology uses KnowledgeScope to govern material admission, then compiles approved semantics into traceable, versioned knowledge revisions."
       },
-      "status": "admitted",
+      "status": "accepted",
       "sourceRefs": [
-        "document-domain",
-        "document-interface"
+        "document-architecture"
       ],
       "weight": 13
-    },
-    {
-      "id": "data-asset",
-      "kind": "entity",
-      "label": {
-        "zh": "DataAsset",
-        "en": "DataAsset"
-      },
-      "summary": {
-        "zh": "被授权纳入语义构建的资料资产。",
-        "en": "An information asset authorized for semantic construction."
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-domain"
-      ],
-      "weight": 6
-    },
-    {
-      "id": "asset-version",
-      "kind": "entity",
-      "label": {
-        "zh": "AssetVersion",
-        "en": "AssetVersion"
-      },
-      "summary": {
-        "zh": "资料在某一时间点的不可变版本。",
-        "en": "An immutable version of an admitted information asset."
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-domain"
-      ],
-      "weight": 5
-    },
-    {
-      "id": "source-authorization",
-      "kind": "policy",
-      "label": {
-        "zh": "SourceAuthorization",
-        "en": "SourceAuthorization"
-      },
-      "summary": {
-        "zh": "限制资料发现、读取与处理范围的授权事实。",
-        "en": "Authorization facts limiting source discovery, reads, and processing."
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-threat",
-        "document-domain"
-      ],
-      "weight": 7
     },
     {
       "id": "evidence",
@@ -172,66 +243,14 @@
         "en": "Evidence"
       },
       "summary": {
-        "zh": "从已准入公开文档中提取并验证的证据。",
-        "en": "Evidence extracted and verified from admitted public documents."
+        "zh": "Evidence：经准入、可引用的资料证据。",
+        "en": "Evidence: admitted, citable material."
       },
       "status": "verified",
       "sourceRefs": [
-        "document-architecture",
-        "document-threat"
+        "document-architecture"
       ],
       "weight": 11
-    },
-    {
-      "id": "citation",
-      "kind": "evidence",
-      "label": {
-        "zh": "Citation",
-        "en": "Citation"
-      },
-      "summary": {
-        "zh": "把语义结论追溯到公开文档的稳定引用。",
-        "en": "A stable reference connecting semantic conclusions to public documentation."
-      },
-      "status": "verified",
-      "sourceRefs": [
-        "document-interface"
-      ],
-      "weight": 7
-    },
-    {
-      "id": "claim",
-      "kind": "concept",
-      "label": {
-        "zh": "Claim",
-        "en": "Claim"
-      },
-      "summary": {
-        "zh": "由证据支持、可被验证的语义陈述。",
-        "en": "A verifiable semantic statement supported by evidence."
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-domain"
-      ],
-      "weight": 7
-    },
-    {
-      "id": "concept",
-      "kind": "concept",
-      "label": {
-        "zh": "Concept",
-        "en": "Concept"
-      },
-      "summary": {
-        "zh": "跨文档统一标识的业务或技术概念。",
-        "en": "A business or technical concept normalized across documents."
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-domain"
-      ],
-      "weight": 8
     },
     {
       "id": "semantic-proposal",
@@ -241,15 +260,14 @@
         "en": "SemanticProposal"
       },
       "summary": {
-        "zh": "Agent 生成、等待政策与证据验证的候选语义。",
-        "en": "Candidate semantics proposed by an Agent pending policy and evidence checks."
+        "zh": "SemanticProposal：Agent 提出的候选概念、关系或陈述。",
+        "en": "SemanticProposal: a candidate concept, relationship, or claim proposed by an Agent."
       },
-      "status": "review",
+      "status": "reviewed",
       "sourceRefs": [
-        "document-architecture",
-        "document-threat"
+        "document-architecture"
       ],
-      "weight": 6
+      "weight": 10
     },
     {
       "id": "knowledge-revision",
@@ -259,1484 +277,841 @@
         "en": "KnowledgeRevision"
       },
       "summary": {
-        "zh": "通过验证并编译的不可变本体修订。",
-        "en": "An immutable ontology revision produced by validation and compilation."
+        "zh": "KnowledgeRevision：人工批准后编译、带精确 parent 的不可变知识修订。",
+        "en": "KnowledgeRevision: an immutable, approval-bound knowledge revision with one exact parent."
       },
       "status": "compiled",
       "sourceRefs": [
         "document-architecture",
-        "document-domain"
+        "document-playground"
+      ],
+      "weight": 15
+    },
+    {
+      "id": "graph-projection",
+      "kind": "concept",
+      "label": {
+        "zh": "GraphProjection",
+        "en": "GraphProjection"
+      },
+      "summary": {
+        "zh": "当前 Rust 引擎已经实现内部 GraphProjection：它确定性生成 revision、concept、claim、procedure 和匿名 evidence 节点，以及语义、引用、冲突关系与连续的学习事件。投影固定声明 human-review 和 agentGraphAccess: false，并绑定精确 revision、语义摘要、projector generation 与投影摘要。证据节点不含原文、摘录、定位、来源 ID 或路径；但内部语义文案仍可能敏感，因此该 JSON 不能直接发布。",
+        "en": "The Rust engine now implements an internal GraphProjection. It deterministically builds revision, concept, claim, procedure, and opaque-evidence nodes plus semantic, citation, and conflict edges and contiguous learning events. The projection fixes human-review and agentGraphAcces…"
+      },
+      "status": "compiled",
+      "sourceRefs": [
+        "document-architecture",
+        "document-privacy"
       ],
       "weight": 12
     },
     {
       "id": "cognitive-package-draft",
-      "kind": "context",
+      "kind": "contract",
       "label": {
         "zh": "CognitivePackageDraft",
         "en": "CognitivePackageDraft"
       },
       "summary": {
-        "zh": "由已接纳本体修订编译出的 schema-v3 认知包草案。",
-        "en": "A schema-v3 cognitive-package draft compiled from an admitted ontology revision."
+        "zh": "CognitivePackageDraft：包含 OKF、Skill 等表面的 schema-v3 候选；本体语义绑定精确 activated revision。",
+        "en": "CognitivePackageDraft: a schema-v3 candidate containing surfaces such as OKF and Skill, with ontology semantics bound to one exact activated revision."
       },
-      "status": "preview",
+      "status": "compiled",
       "sourceRefs": [
-        "document-product",
-        "document-interface"
-      ],
-      "weight": 12
-    },
-    {
-      "id": "package-generation",
-      "kind": "revision",
-      "label": {
-        "zh": "PackageGeneration",
-        "en": "PackageGeneration"
-      },
-      "summary": {
-        "zh": "A3S Use 安装、锁定并原子发布的认知包生命周期单元。",
-        "en": "The cognitive-package lifecycle unit installed, locked, and atomically published by A3S Use."
-      },
-      "status": "planned",
-      "sourceRefs": [
-        "document-interface",
         "document-architecture"
       ],
-      "weight": 11
+      "weight": 13
     },
     {
-      "id": "okf-bundle",
-      "kind": "context",
+      "id": "a3s-parser",
+      "kind": "process",
       "label": {
-        "zh": "OKF Bundle",
-        "en": "OKF Bundle"
+        "zh": "A3S Parser",
+        "en": "A3S Parser"
       },
       "summary": {
-        "zh": "包含概念、关系和引用的 Agent 知识表面。",
-        "en": "The Agent knowledge surface containing concepts, relationships, and citations."
+        "zh": "Parser 证据还会绑定到已审阅 Parser generation 的精确生成能力矩阵。只有经资格约束的 DOCX、XLSX、PPTX、PDF 和图片条目才能进入语义投影；检测格式、媒体类型、自然 unit 漂移或不支持的旧格式都会 fail closed。provenance 保留矩阵摘要以及真实的结构化、视觉、调用方提供或 feature-gated 状态，不暴露 Parser 仓库路径。",
+        "en": "Parser-backed evidence is also bound to the exact generated capability matrix"
       },
-      "status": "preview",
-      "sourceRefs": [
-        "document-interface"
-      ],
-      "weight": 9
-    },
-    {
-      "id": "ontology-skill",
-      "kind": "capability",
-      "label": {
-        "zh": "Ontology Skill",
-        "en": "Ontology Skill"
-      },
-      "summary": {
-        "zh": "说明 Agent 如何使用认知包及其知识边界。",
-        "en": "Instructions describing how an Agent uses the package and its knowledge boundaries."
-      },
-      "status": "planned",
-      "sourceRefs": [
-        "document-interface"
-      ],
-      "weight": 7
-    },
-    {
-      "id": "agent-session",
-      "kind": "agent",
-      "label": {
-        "zh": "AgentSession",
-        "en": "AgentSession"
-      },
-      "summary": {
-        "zh": "绑定身份、范围、预算与工具的受治理 Agent 会话。",
-        "en": "A governed Agent session bound to identity, scope, budget, and tools."
-      },
-      "status": "active",
-      "sourceRefs": [
-        "document-interface",
-        "document-architecture"
-      ],
-      "weight": 8
-    },
-    {
-      "id": "capability-snapshot",
-      "kind": "contract",
-      "label": {
-        "zh": "CapabilitySnapshot",
-        "en": "CapabilitySnapshot"
-      },
-      "summary": {
-        "zh": "宿主观察到的精确认知包 generation 与就绪表面集合。",
-        "en": "The exact package generation and ready surfaces observed by an Agent host."
-      },
-      "status": "planned",
-      "sourceRefs": [
-        "document-interface",
-        "document-architecture"
-      ],
-      "weight": 8
-    },
-    {
-      "id": "knowledge-explorer",
-      "kind": "agent",
-      "label": {
-        "zh": "Knowledge Explorer",
-        "en": "Knowledge Explorer"
-      },
-      "summary": {
-        "zh": "持续发现覆盖、变化与缺口，并规划受限学习工作。",
-        "en": "Continuously discovers coverage, change, and gaps, then plans bounded learning work."
-      },
-      "status": "active",
+      "status": "verified",
       "sourceRefs": [
         "document-architecture"
       ],
       "weight": 9
-    },
-    {
-      "id": "ingestion-run",
-      "kind": "process",
-      "label": {
-        "zh": "IngestionRun",
-        "en": "IngestionRun"
-      },
-      "summary": {
-        "zh": "从资料版本到本体激活的可恢复处理过程。",
-        "en": "Recoverable processing from an asset version to ontology activation."
-      },
-      "status": "completed",
-      "sourceRefs": [
-        "document-architecture"
-      ],
-      "weight": 6
-    },
-    {
-      "id": "compilation-run",
-      "kind": "process",
-      "label": {
-        "zh": "CompilationRun",
-        "en": "CompilationRun"
-      },
-      "summary": {
-        "zh": "将已验证语义编译为本体修订与认知包草案。",
-        "en": "Compiles verified semantics into an ontology revision and cognitive-package draft."
-      },
-      "status": "completed",
-      "sourceRefs": [
-        "document-architecture"
-      ],
-      "weight": 7
-    },
-    {
-      "id": "learning-signal",
-      "kind": "signal",
-      "label": {
-        "zh": "LearningSignal",
-        "en": "LearningSignal"
-      },
-      "summary": {
-        "zh": "来自认知包使用结果、等待资格验证的学习信号。",
-        "en": "A learning signal from cognitive-package usage awaiting qualification."
-      },
-      "status": "review",
-      "sourceRefs": [
-        "document-interface",
-        "document-evaluation"
-      ],
-      "weight": 5
-    },
-    {
-      "id": "evaluation-run",
-      "kind": "process",
-      "label": {
-        "zh": "EvaluationRun",
-        "en": "EvaluationRun"
-      },
-      "summary": {
-        "zh": "对本体质量、认知包效果与版本回归进行可复现评估。",
-        "en": "Reproducible evaluation of ontology quality, package outcomes, and revision regressions."
-      },
-      "status": "completed",
-      "sourceRefs": [
-        "document-evaluation"
-      ],
-      "weight": 6
-    },
-    {
-      "id": "trust-level",
-      "kind": "policy",
-      "label": {
-        "zh": "TrustLevel",
-        "en": "TrustLevel"
-      },
-      "summary": {
-        "zh": "表达证据与认知包知识可被依赖的程度。",
-        "en": "Expresses how strongly evidence or packaged knowledge may be relied upon."
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-interface",
-        "document-evaluation"
-      ],
-      "weight": 5
-    },
-    {
-      "id": "workspace-policy",
-      "kind": "policy",
-      "label": {
-        "zh": "WorkspacePolicy",
-        "en": "WorkspacePolicy"
-      },
-      "summary": {
-        "zh": "约束资料准入、语义验证、认知包生成和保留策略。",
-        "en": "Constrains source admission, semantic validation, package generation, and retention."
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-threat",
-        "document-domain"
-      ],
-      "weight": 8
     },
     {
       "id": "a3s-use",
-      "kind": "capability",
+      "kind": "process",
       "label": {
         "zh": "A3S Use",
         "en": "A3S Use"
       },
       "summary": {
-        "zh": "解析认知包依赖，锁定精确 generation，并原子发布 OKF 与 Skill 等表面。",
-        "en": "Resolves cognitive-package dependencies, locks an exact generation, and atomically publishes surfaces such as OKF and Skill."
+        "zh": "Package generation：由 A3S Use 安装、锁定并发布、供 Agent 使用的精确版本。",
+        "en": "Package generation: the exact package installed, locked, and published by A3S Use for Agents."
       },
-      "status": "boundary",
+      "status": "waiting",
       "sourceRefs": [
-        "document-architecture"
+        "document-overview",
+        "document-architecture",
+        "document-playground"
       ],
-      "weight": 5
+      "weight": 12
     },
     {
       "id": "a3s-code",
-      "kind": "capability",
+      "kind": "agent",
       "label": {
         "zh": "A3S Code",
         "en": "A3S Code"
       },
       "summary": {
-        "zh": "承载 Agent，并消费 A3S Use 发布的精确认知包 generation。",
-        "en": "Hosts Agents and consumes the exact cognitive-package generation published by A3S Use."
+        "zh": "· A3S Code · 运行 Ontology Agents，并承载消费精确 generation 的业务 Agent · 直接读取 3D 图谱 ·",
+        "en": "· A3S Code · Run ontology Agents and host business Agents against an exact generation · Read the 3D graph directly ·"
       },
-      "status": "boundary",
+      "status": "blocked",
       "sourceRefs": [
         "document-architecture",
-        "document-interface"
+        "document-playground"
       ],
-      "weight": 6
-    },
-    {
-      "id": "a3s-flow",
-      "kind": "capability",
-      "label": {
-        "zh": "A3S Flow",
-        "en": "A3S Flow"
-      },
-      "summary": {
-        "zh": "保存探索、摄取、编译与评估的持久工作流历史。",
-        "en": "Owns durable workflow history for exploration, ingestion, compilation, and evaluation."
-      },
-      "status": "boundary",
-      "sourceRefs": [
-        "document-architecture"
-      ],
-      "weight": 6
-    },
-    {
-      "id": "a3s-cloud",
-      "kind": "capability",
-      "label": {
-        "zh": "A3S Cloud",
-        "en": "A3S Cloud"
-      },
-      "summary": {
-        "zh": "部署和协调工作负载，不拥有组织知识权威。",
-        "en": "Deploys and coordinates workloads without owning organizational knowledge authority."
-      },
-      "status": "boundary",
-      "sourceRefs": [
-        "document-architecture"
-      ],
-      "weight": 5
-    },
-    {
-      "id": "document-product",
-      "kind": "document",
-      "label": {
-        "zh": "产品概览",
-        "en": "Product overview"
-      },
-      "summary": {
-        "zh": "允许进入公开演示图谱的产品文档。",
-        "en": "A product document admitted to the public demonstration graph."
-      },
-      "status": "public",
-      "sourceRefs": [
-        "document-product"
-      ],
-      "weight": 4
-    },
-    {
-      "id": "document-architecture",
-      "kind": "document",
-      "label": {
-        "zh": "系统架构",
-        "en": "System architecture"
-      },
-      "summary": {
-        "zh": "允许进入公开演示图谱的产品文档。",
-        "en": "A product document admitted to the public demonstration graph."
-      },
-      "status": "public",
-      "sourceRefs": [
-        "document-architecture"
-      ],
-      "weight": 4
-    },
-    {
-      "id": "document-domain",
-      "kind": "document",
-      "label": {
-        "zh": "领域模型",
-        "en": "Domain model"
-      },
-      "summary": {
-        "zh": "允许进入公开演示图谱的产品文档。",
-        "en": "A product document admitted to the public demonstration graph."
-      },
-      "status": "public",
-      "sourceRefs": [
-        "document-domain"
-      ],
-      "weight": 4
-    },
-    {
-      "id": "document-interface",
-      "kind": "document",
-      "label": {
-        "zh": "认知包交付契约",
-        "en": "Cognitive package delivery contract"
-      },
-      "summary": {
-        "zh": "允许进入公开演示图谱的产品文档。",
-        "en": "A product document admitted to the public demonstration graph."
-      },
-      "status": "public",
-      "sourceRefs": [
-        "document-interface"
-      ],
-      "weight": 4
-    },
-    {
-      "id": "document-threat",
-      "kind": "document",
-      "label": {
-        "zh": "公开数据边界",
-        "en": "Public data boundary"
-      },
-      "summary": {
-        "zh": "允许进入公开演示图谱的产品文档。",
-        "en": "A product document admitted to the public demonstration graph."
-      },
-      "status": "public",
-      "sourceRefs": [
-        "document-threat"
-      ],
-      "weight": 4
-    },
-    {
-      "id": "document-evaluation",
-      "kind": "document",
-      "label": {
-        "zh": "质量与评估",
-        "en": "Quality and evaluation"
-      },
-      "summary": {
-        "zh": "允许进入公开演示图谱的产品文档。",
-        "en": "A product document admitted to the public demonstration graph."
-      },
-      "status": "public",
-      "sourceRefs": [
-        "document-evaluation"
-      ],
-      "weight": 4
+      "weight": 10
     }
   ],
   "edges": [
     {
-      "id": "workspace-authorizes-scope",
-      "source": "workspace",
-      "target": "knowledge-scope",
-      "predicate": "authorized_by",
-      "label": {
-        "zh": "授权知识范围",
-        "en": "authorizes knowledge scope"
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-architecture",
-        "document-domain"
-      ]
-    },
-    {
-      "id": "scope-bounded-by-policy",
-      "source": "knowledge-scope",
-      "target": "workspace-policy",
-      "predicate": "bounded_by",
-      "label": {
-        "zh": "受策略约束",
-        "en": "bounded by policy"
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-architecture",
-        "document-domain"
-      ]
-    },
-    {
-      "id": "scope-includes-asset",
-      "source": "knowledge-scope",
-      "target": "data-asset",
-      "predicate": "includes",
-      "label": {
-        "zh": "包含资料资产",
-        "en": "includes data asset"
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-architecture",
-        "document-domain"
-      ]
-    },
-    {
-      "id": "asset-has-version",
-      "source": "data-asset",
-      "target": "asset-version",
-      "predicate": "has_version",
-      "label": {
-        "zh": "具有资料版本",
-        "en": "has asset version"
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-architecture",
-        "document-domain"
-      ]
-    },
-    {
-      "id": "asset-requires-authorization",
-      "source": "data-asset",
-      "target": "source-authorization",
-      "predicate": "requires",
-      "label": {
-        "zh": "需要来源授权",
-        "en": "requires source authorization"
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-architecture",
-        "document-domain"
-      ]
-    },
-    {
-      "id": "version-produces-evidence",
-      "source": "asset-version",
-      "target": "evidence",
-      "predicate": "produces",
-      "label": {
-        "zh": "产生证据",
-        "en": "produces evidence"
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-architecture",
-        "document-domain"
-      ]
-    },
-    {
-      "id": "evidence-supports-claim",
-      "source": "evidence",
-      "target": "claim",
-      "predicate": "supports",
-      "label": {
-        "zh": "支持陈述",
-        "en": "supports claim"
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-architecture",
-        "document-domain"
-      ]
-    },
-    {
-      "id": "citation-points-evidence",
-      "source": "citation",
-      "target": "evidence",
-      "predicate": "points_to",
-      "label": {
-        "zh": "指向证据",
-        "en": "points to evidence"
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-architecture",
-        "document-domain"
-      ]
-    },
-    {
-      "id": "claim-describes-concept",
-      "source": "claim",
-      "target": "concept",
+      "id": "document-overview-describes-agentic-ontology",
+      "source": "document-overview",
+      "target": "agentic-ontology",
       "predicate": "describes",
       "label": {
-        "zh": "描述概念",
-        "en": "describes concept"
+        "zh": "描述",
+        "en": "describes"
       },
-      "status": "admitted",
+      "status": "verified",
       "sourceRefs": [
-        "document-architecture",
-        "document-domain"
+        "document-overview"
       ]
     },
     {
-      "id": "proposal-proposes-concept",
-      "source": "semantic-proposal",
-      "target": "concept",
-      "predicate": "proposes",
+      "id": "document-overview-describes-a3s-use",
+      "source": "document-overview",
+      "target": "a3s-use",
+      "predicate": "describes",
       "label": {
-        "zh": "提出概念",
-        "en": "proposes concept"
+        "zh": "描述",
+        "en": "describes"
       },
-      "status": "admitted",
+      "status": "verified",
       "sourceRefs": [
-        "document-architecture",
-        "document-domain"
+        "document-overview"
       ]
     },
     {
-      "id": "proposal-cites-evidence",
-      "source": "semantic-proposal",
-      "target": "evidence",
-      "predicate": "cites",
+      "id": "document-architecture-describes-agentic-ontology",
+      "source": "document-architecture",
+      "target": "agentic-ontology",
+      "predicate": "describes",
       "label": {
-        "zh": "引用证据",
-        "en": "cites evidence"
+        "zh": "描述",
+        "en": "describes"
       },
-      "status": "admitted",
+      "status": "verified",
       "sourceRefs": [
-        "document-architecture",
-        "document-domain"
+        "document-architecture"
       ]
     },
     {
-      "id": "revision-admits-proposal",
-      "source": "knowledge-revision",
-      "target": "semantic-proposal",
-      "predicate": "admits",
-      "label": {
-        "zh": "接纳候选语义",
-        "en": "admits proposal"
-      },
-      "status": "review",
-      "sourceRefs": [
-        "document-architecture",
-        "document-domain"
-      ]
-    },
-    {
-      "id": "revision-contains-concept",
-      "source": "knowledge-revision",
-      "target": "concept",
-      "predicate": "contains",
-      "label": {
-        "zh": "包含概念",
-        "en": "contains concept"
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-architecture",
-        "document-domain"
-      ]
-    },
-    {
-      "id": "package-draft-compiled-from-revision",
-      "source": "cognitive-package-draft",
-      "target": "knowledge-revision",
-      "predicate": "compiled_from",
-      "label": {
-        "zh": "由知识修订编译",
-        "en": "compiled from knowledge revision"
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-architecture",
-        "document-domain"
-      ]
-    },
-    {
-      "id": "package-draft-contains-okf",
-      "source": "cognitive-package-draft",
-      "target": "okf-bundle",
-      "predicate": "contains",
-      "label": {
-        "zh": "包含 OKF 知识表面",
-        "en": "contains OKF knowledge surface"
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-architecture",
-        "document-domain"
-      ]
-    },
-    {
-      "id": "package-draft-contains-skill",
-      "source": "cognitive-package-draft",
-      "target": "ontology-skill",
-      "predicate": "contains",
-      "label": {
-        "zh": "包含 Skill 认知说明",
-        "en": "contains Skill cognition guidance"
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-architecture",
-        "document-domain"
-      ]
-    },
-    {
-      "id": "okf-cites-evidence",
-      "source": "okf-bundle",
-      "target": "citation",
-      "predicate": "cites",
-      "label": {
-        "zh": "保留公开引用",
-        "en": "retains public citations"
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-architecture",
-        "document-domain"
-      ]
-    },
-    {
-      "id": "okf-qualified-by-trust",
-      "source": "okf-bundle",
-      "target": "trust-level",
-      "predicate": "qualified_by",
-      "label": {
-        "zh": "由信任等级限定",
-        "en": "qualified by trust level"
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-architecture",
-        "document-domain"
-      ]
-    },
-    {
-      "id": "use-installs-package",
-      "source": "a3s-use",
-      "target": "cognitive-package-draft",
-      "predicate": "installs",
-      "label": {
-        "zh": "安装认知包",
-        "en": "installs cognitive package"
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-architecture",
-        "document-domain"
-      ]
-    },
-    {
-      "id": "use-publishes-generation",
-      "source": "a3s-use",
-      "target": "package-generation",
-      "predicate": "publishes",
-      "label": {
-        "zh": "发布精确 generation",
-        "en": "publishes exact generation"
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-architecture",
-        "document-domain"
-      ]
-    },
-    {
-      "id": "generation-projects-okf",
-      "source": "package-generation",
-      "target": "okf-bundle",
-      "predicate": "projects",
-      "label": {
-        "zh": "投影 OKF 表面",
-        "en": "projects OKF surface"
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-architecture",
-        "document-domain"
-      ]
-    },
-    {
-      "id": "generation-projects-skill",
-      "source": "package-generation",
-      "target": "ontology-skill",
-      "predicate": "projects",
-      "label": {
-        "zh": "投影 Skill 表面",
-        "en": "projects Skill surface"
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-architecture",
-        "document-domain"
-      ]
-    },
-    {
-      "id": "snapshot-selects-generation",
-      "source": "capability-snapshot",
-      "target": "package-generation",
-      "predicate": "selects",
-      "label": {
-        "zh": "选择精确 generation",
-        "en": "selects exact generation"
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-architecture",
-        "document-domain"
-      ]
-    },
-    {
-      "id": "code-consumes-snapshot",
-      "source": "a3s-code",
-      "target": "capability-snapshot",
-      "predicate": "consumes",
-      "label": {
-        "zh": "消费能力快照",
-        "en": "consumes capability snapshot"
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-architecture",
-        "document-domain"
-      ]
-    },
-    {
-      "id": "session-uses-okf",
-      "source": "agent-session",
-      "target": "okf-bundle",
-      "predicate": "uses",
-      "label": {
-        "zh": "使用 OKF 知识",
-        "en": "uses OKF knowledge"
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-architecture",
-        "document-domain"
-      ]
-    },
-    {
-      "id": "session-follows-skill",
-      "source": "agent-session",
-      "target": "ontology-skill",
-      "predicate": "follows",
-      "label": {
-        "zh": "遵循 Skill 边界",
-        "en": "follows Skill boundaries"
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-architecture",
-        "document-domain"
-      ]
-    },
-    {
-      "id": "explorer-observes-asset",
-      "source": "knowledge-explorer",
-      "target": "data-asset",
-      "predicate": "observes",
-      "label": {
-        "zh": "观察资料变化",
-        "en": "observes asset change"
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-architecture",
-        "document-domain"
-      ]
-    },
-    {
-      "id": "explorer-plans-ingestion",
-      "source": "knowledge-explorer",
-      "target": "ingestion-run",
-      "predicate": "plans",
-      "label": {
-        "zh": "规划摄取工作",
-        "en": "plans ingestion"
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-architecture",
-        "document-domain"
-      ]
-    },
-    {
-      "id": "ingestion-produces-proposal",
-      "source": "ingestion-run",
-      "target": "semantic-proposal",
-      "predicate": "produces",
-      "label": {
-        "zh": "产生候选语义",
-        "en": "produces proposal"
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-architecture",
-        "document-domain"
-      ]
-    },
-    {
-      "id": "compilation-reads-revision",
-      "source": "compilation-run",
-      "target": "knowledge-revision",
-      "predicate": "reads",
-      "label": {
-        "zh": "读取知识修订",
-        "en": "reads revision"
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-architecture",
-        "document-domain"
-      ]
-    },
-    {
-      "id": "compilation-produces-package-draft",
-      "source": "compilation-run",
-      "target": "cognitive-package-draft",
-      "predicate": "produces",
-      "label": {
-        "zh": "生成认知包草案",
-        "en": "produces cognitive-package draft"
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-architecture",
-        "document-domain"
-      ]
-    },
-    {
-      "id": "learning-signal-qualifies-through-evaluation",
-      "source": "learning-signal",
-      "target": "evaluation-run",
-      "predicate": "qualified_by",
-      "label": {
-        "zh": "经评估定级",
-        "en": "qualified by evaluation"
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-architecture",
-        "document-domain"
-      ]
-    },
-    {
-      "id": "evaluation-compares-revision",
-      "source": "evaluation-run",
-      "target": "knowledge-revision",
-      "predicate": "evaluates",
-      "label": {
-        "zh": "评估知识修订",
-        "en": "evaluates revision"
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-architecture",
-        "document-domain"
-      ]
-    },
-    {
-      "id": "signal-informs-explorer",
-      "source": "learning-signal",
-      "target": "knowledge-explorer",
-      "predicate": "informs",
-      "label": {
-        "zh": "反馈探索器",
-        "en": "informs explorer"
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-architecture",
-        "document-domain"
-      ]
-    },
-    {
-      "id": "code-hosts-session",
-      "source": "a3s-code",
-      "target": "agent-session",
-      "predicate": "hosts",
-      "label": {
-        "zh": "承载 Agent 会话",
-        "en": "hosts Agent session"
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-architecture",
-        "document-domain"
-      ]
-    },
-    {
-      "id": "code-runs-explorer",
-      "source": "a3s-code",
-      "target": "knowledge-explorer",
-      "predicate": "runs",
-      "label": {
-        "zh": "运行受治理探索器",
-        "en": "runs governed explorer"
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-architecture",
-        "document-domain"
-      ]
-    },
-    {
-      "id": "flow-owns-ingestion",
-      "source": "a3s-flow",
-      "target": "ingestion-run",
-      "predicate": "owns_history",
-      "label": {
-        "zh": "保存摄取历史",
-        "en": "owns ingestion history"
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-architecture",
-        "document-domain"
-      ]
-    },
-    {
-      "id": "flow-owns-compilation",
-      "source": "a3s-flow",
-      "target": "compilation-run",
-      "predicate": "owns_history",
-      "label": {
-        "zh": "保存编译历史",
-        "en": "owns compilation history"
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-architecture",
-        "document-domain"
-      ]
-    },
-    {
-      "id": "cloud-deploys-code",
-      "source": "a3s-cloud",
-      "target": "a3s-code",
-      "predicate": "deploys",
-      "label": {
-        "zh": "部署运行能力",
-        "en": "deploys runtime capability"
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-architecture",
-        "document-domain"
-      ]
-    },
-    {
-      "id": "doc-domain-defines-workspace",
-      "source": "document-domain",
+      "id": "document-architecture-describes-workspace",
+      "source": "document-architecture",
       "target": "workspace",
-      "predicate": "defines",
+      "predicate": "describes",
       "label": {
-        "zh": "定义 Workspace",
-        "en": "defines Workspace"
+        "zh": "描述",
+        "en": "describes"
       },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-domain"
-      ]
-    },
-    {
-      "id": "doc-domain-defines-scope",
-      "source": "document-domain",
-      "target": "knowledge-scope",
-      "predicate": "defines",
-      "label": {
-        "zh": "定义 KnowledgeScope",
-        "en": "defines KnowledgeScope"
-      },
-      "status": "admitted",
-      "sourceRefs": [
-        "document-domain"
-      ]
-    },
-    {
-      "id": "doc-architecture-defines-explorer",
-      "source": "document-architecture",
-      "target": "knowledge-explorer",
-      "predicate": "defines",
-      "label": {
-        "zh": "定义持续探索器",
-        "en": "defines explorer"
-      },
-      "status": "admitted",
+      "status": "verified",
       "sourceRefs": [
         "document-architecture"
       ]
     },
     {
-      "id": "doc-architecture-defines-revision",
+      "id": "document-architecture-describes-knowledge-scope",
+      "source": "document-architecture",
+      "target": "knowledge-scope",
+      "predicate": "describes",
+      "label": {
+        "zh": "描述",
+        "en": "describes"
+      },
+      "status": "verified",
+      "sourceRefs": [
+        "document-architecture"
+      ]
+    },
+    {
+      "id": "document-architecture-describes-evidence",
+      "source": "document-architecture",
+      "target": "evidence",
+      "predicate": "describes",
+      "label": {
+        "zh": "描述",
+        "en": "describes"
+      },
+      "status": "verified",
+      "sourceRefs": [
+        "document-architecture"
+      ]
+    },
+    {
+      "id": "document-architecture-describes-semantic-proposal",
+      "source": "document-architecture",
+      "target": "semantic-proposal",
+      "predicate": "describes",
+      "label": {
+        "zh": "描述",
+        "en": "describes"
+      },
+      "status": "verified",
+      "sourceRefs": [
+        "document-architecture"
+      ]
+    },
+    {
+      "id": "document-architecture-describes-knowledge-revision",
       "source": "document-architecture",
       "target": "knowledge-revision",
-      "predicate": "defines",
+      "predicate": "describes",
       "label": {
-        "zh": "定义知识修订",
-        "en": "defines revision"
+        "zh": "描述",
+        "en": "describes"
       },
-      "status": "admitted",
+      "status": "verified",
       "sourceRefs": [
         "document-architecture"
       ]
     },
     {
-      "id": "doc-interface-defines-package",
-      "source": "document-interface",
+      "id": "document-architecture-describes-graph-projection",
+      "source": "document-architecture",
+      "target": "graph-projection",
+      "predicate": "describes",
+      "label": {
+        "zh": "描述",
+        "en": "describes"
+      },
+      "status": "verified",
+      "sourceRefs": [
+        "document-architecture"
+      ]
+    },
+    {
+      "id": "document-architecture-describes-cognitive-package-draft",
+      "source": "document-architecture",
       "target": "cognitive-package-draft",
-      "predicate": "defines",
+      "predicate": "describes",
       "label": {
-        "zh": "定义认知包草案",
-        "en": "defines package draft"
+        "zh": "描述",
+        "en": "describes"
       },
-      "status": "admitted",
+      "status": "verified",
       "sourceRefs": [
-        "document-interface"
+        "document-architecture"
       ]
     },
     {
-      "id": "doc-interface-defines-generation",
-      "source": "document-interface",
-      "target": "package-generation",
-      "predicate": "defines",
+      "id": "document-architecture-describes-a3s-parser",
+      "source": "document-architecture",
+      "target": "a3s-parser",
+      "predicate": "describes",
       "label": {
-        "zh": "定义发布 generation",
-        "en": "defines published generation"
+        "zh": "描述",
+        "en": "describes"
       },
-      "status": "admitted",
+      "status": "verified",
       "sourceRefs": [
-        "document-interface"
+        "document-architecture"
       ]
     },
     {
-      "id": "doc-threat-bounds-authorization",
-      "source": "document-threat",
-      "target": "source-authorization",
+      "id": "document-architecture-describes-a3s-use",
+      "source": "document-architecture",
+      "target": "a3s-use",
+      "predicate": "describes",
+      "label": {
+        "zh": "描述",
+        "en": "describes"
+      },
+      "status": "verified",
+      "sourceRefs": [
+        "document-architecture"
+      ]
+    },
+    {
+      "id": "document-architecture-describes-a3s-code",
+      "source": "document-architecture",
+      "target": "a3s-code",
+      "predicate": "describes",
+      "label": {
+        "zh": "描述",
+        "en": "describes"
+      },
+      "status": "verified",
+      "sourceRefs": [
+        "document-architecture"
+      ]
+    },
+    {
+      "id": "document-playground-describes-agentic-ontology",
+      "source": "document-playground",
+      "target": "agentic-ontology",
+      "predicate": "describes",
+      "label": {
+        "zh": "描述",
+        "en": "describes"
+      },
+      "status": "verified",
+      "sourceRefs": [
+        "document-playground"
+      ]
+    },
+    {
+      "id": "document-playground-describes-knowledge-revision",
+      "source": "document-playground",
+      "target": "knowledge-revision",
+      "predicate": "describes",
+      "label": {
+        "zh": "描述",
+        "en": "describes"
+      },
+      "status": "verified",
+      "sourceRefs": [
+        "document-playground"
+      ]
+    },
+    {
+      "id": "document-playground-describes-a3s-use",
+      "source": "document-playground",
+      "target": "a3s-use",
+      "predicate": "describes",
+      "label": {
+        "zh": "描述",
+        "en": "describes"
+      },
+      "status": "verified",
+      "sourceRefs": [
+        "document-playground"
+      ]
+    },
+    {
+      "id": "document-playground-describes-a3s-code",
+      "source": "document-playground",
+      "target": "a3s-code",
+      "predicate": "describes",
+      "label": {
+        "zh": "描述",
+        "en": "describes"
+      },
+      "status": "verified",
+      "sourceRefs": [
+        "document-playground"
+      ]
+    },
+    {
+      "id": "document-privacy-describes-agentic-ontology",
+      "source": "document-privacy",
+      "target": "agentic-ontology",
+      "predicate": "describes",
+      "label": {
+        "zh": "描述",
+        "en": "describes"
+      },
+      "status": "verified",
+      "sourceRefs": [
+        "document-privacy"
+      ]
+    },
+    {
+      "id": "document-privacy-describes-graph-projection",
+      "source": "document-privacy",
+      "target": "graph-projection",
+      "predicate": "describes",
+      "label": {
+        "zh": "描述",
+        "en": "describes"
+      },
+      "status": "verified",
+      "sourceRefs": [
+        "document-privacy"
+      ]
+    },
+    {
+      "id": "document-quick-start-describes-agentic-ontology",
+      "source": "document-quick-start",
+      "target": "agentic-ontology",
+      "predicate": "describes",
+      "label": {
+        "zh": "描述",
+        "en": "describes"
+      },
+      "status": "verified",
+      "sourceRefs": [
+        "document-quick-start"
+      ]
+    },
+    {
+      "id": "document-versioning-describes-agentic-ontology",
+      "source": "document-versioning",
+      "target": "agentic-ontology",
+      "predicate": "describes",
+      "label": {
+        "zh": "描述",
+        "en": "describes"
+      },
+      "status": "verified",
+      "sourceRefs": [
+        "document-versioning"
+      ]
+    },
+    {
+      "id": "ontology-governs-scope",
+      "source": "agentic-ontology",
+      "target": "knowledge-scope",
       "predicate": "governs",
       "label": {
-        "zh": "约束来源授权",
-        "en": "governs source authorization"
+        "zh": "约束准入范围",
+        "en": "governs admission"
       },
-      "status": "admitted",
+      "status": "verified",
       "sourceRefs": [
-        "document-threat"
+        "document-architecture"
       ]
     },
     {
-      "id": "doc-evaluation-defines-evaluation",
-      "source": "document-evaluation",
-      "target": "evaluation-run",
-      "predicate": "defines",
+      "id": "workspace-owns-scope",
+      "source": "workspace",
+      "target": "knowledge-scope",
+      "predicate": "owns",
       "label": {
-        "zh": "定义质量评估",
-        "en": "defines evaluation"
+        "zh": "拥有",
+        "en": "owns"
       },
-      "status": "admitted",
+      "status": "verified",
       "sourceRefs": [
-        "document-evaluation"
+        "document-architecture"
       ]
     },
     {
-      "id": "doc-product-explains-package",
-      "source": "document-product",
+      "id": "scope-admits-evidence",
+      "source": "knowledge-scope",
+      "target": "evidence",
+      "predicate": "admits",
+      "label": {
+        "zh": "准入",
+        "en": "admits"
+      },
+      "status": "verified",
+      "sourceRefs": [
+        "document-architecture"
+      ]
+    },
+    {
+      "id": "parser-produces-evidence",
+      "source": "a3s-parser",
+      "target": "evidence",
+      "predicate": "produces",
+      "label": {
+        "zh": "生成证据",
+        "en": "produces evidence"
+      },
+      "status": "verified",
+      "sourceRefs": [
+        "document-architecture"
+      ]
+    },
+    {
+      "id": "evidence-grounds-proposal",
+      "source": "evidence",
+      "target": "semantic-proposal",
+      "predicate": "grounds",
+      "label": {
+        "zh": "约束提案",
+        "en": "grounds"
+      },
+      "status": "verified",
+      "sourceRefs": [
+        "document-architecture"
+      ]
+    },
+    {
+      "id": "proposal-enters-revision",
+      "source": "semantic-proposal",
+      "target": "knowledge-revision",
+      "predicate": "validated-into",
+      "label": {
+        "zh": "验证后进入",
+        "en": "validated into"
+      },
+      "status": "verified",
+      "sourceRefs": [
+        "document-architecture"
+      ]
+    },
+    {
+      "id": "revision-projects-graph",
+      "source": "knowledge-revision",
+      "target": "graph-projection",
+      "predicate": "projects-for-humans",
+      "label": {
+        "zh": "投影供人审阅",
+        "en": "projects for humans"
+      },
+      "status": "verified",
+      "sourceRefs": [
+        "document-architecture"
+      ]
+    },
+    {
+      "id": "revision-compiles-package",
+      "source": "knowledge-revision",
       "target": "cognitive-package-draft",
-      "predicate": "explains",
+      "predicate": "compiles",
       "label": {
-        "zh": "说明认知包",
-        "en": "explains cognitive package"
+        "zh": "编译认知包",
+        "en": "compiles"
       },
-      "status": "admitted",
+      "status": "verified",
       "sourceRefs": [
-        "document-product"
+        "document-architecture"
+      ]
+    },
+    {
+      "id": "package-handoff-use",
+      "source": "cognitive-package-draft",
+      "target": "a3s-use",
+      "predicate": "handed-to",
+      "label": {
+        "zh": "交给 A3S Use",
+        "en": "handed to A3S Use"
+      },
+      "status": "verified",
+      "sourceRefs": [
+        "document-architecture"
+      ]
+    },
+    {
+      "id": "use-delivers-code",
+      "source": "a3s-use",
+      "target": "a3s-code",
+      "predicate": "delivers-generation",
+      "label": {
+        "zh": "交付精确 generation",
+        "en": "delivers exact generation"
+      },
+      "status": "verified",
+      "sourceRefs": [
+        "document-architecture",
+        "document-playground"
+      ]
+    },
+    {
+      "id": "graph-denies-agent-access",
+      "source": "graph-projection",
+      "target": "a3s-code",
+      "predicate": "not-exposed-to",
+      "label": {
+        "zh": "不向 Agent 暴露",
+        "en": "not exposed to Agents"
+      },
+      "status": "verified",
+      "sourceRefs": [
+        "document-architecture"
       ]
     }
   ],
   "events": [
     {
-      "id": "event-read-domain",
-      "timestamp": "10:24:31",
+      "id": "event-document-overview",
+      "timestamp": "2026-08-09T07:39:38.785Z",
       "action": "document.read",
       "title": {
-        "zh": "读取《领域模型》",
-        "en": "Read “Domain model”"
+        "zh": "构建器读取《Agentic Ontology 文档》",
+        "en": "Builder read “Agentic Ontology documentation”"
       },
-      "documentId": "document-domain",
+      "documentId": "document-overview",
       "learned": {
-        "zh": "识别 Workspace、KnowledgeScope 与资料授权边界。",
-        "en": "Identified Workspace, KnowledgeScope, and source authorization boundaries."
+        "zh": "Agentic Ontology v0.1 中文产品文档。",
+        "en": "English product documentation for Agentic Ontology v0.1."
       },
       "semantics": {
-        "zh": "新增 2 个实体候选，关联 5 条定义证据。",
-        "en": "Proposed 2 entities and linked 5 definition evidence items."
+        "zh": "Agentic Ontology、A3S Use进入公开投影。",
+        "en": "Agentic Ontology, A3S Use entered the public projection."
       },
-      "status": "admitted",
+      "status": "compiled",
+      "revision": "Public 233f8c4d",
+      "delta": 5,
       "nodeIds": [
-        "document-domain",
-        "workspace",
-        "knowledge-scope",
-        "source-authorization"
+        "document-overview",
+        "agentic-ontology",
+        "a3s-use"
       ],
       "edgeIds": [
-        "doc-domain-defines-workspace",
-        "doc-domain-defines-scope"
-      ],
-      "revision": "Revision 18",
-      "delta": 12
+        "document-overview-describes-agentic-ontology",
+        "document-overview-describes-a3s-use"
+      ]
     },
     {
-      "id": "event-understand-boundary",
-      "timestamp": "10:24:35",
-      "action": "entity.understand",
+      "id": "event-document-architecture",
+      "timestamp": "2026-08-09T07:39:38.787Z",
+      "action": "document.read",
       "title": {
-        "zh": "理解 Workspace / KnowledgeScope 边界",
-        "en": "Understand the Workspace / KnowledgeScope boundary"
-      },
-      "documentId": "document-domain",
-      "learned": {
-        "zh": "Workspace 是权威隔离边界，KnowledgeScope 是本体构建的资料准入边界。",
-        "en": "Workspace is the authority boundary; KnowledgeScope controls which material enters ontology construction."
-      },
-      "semantics": {
-        "zh": "区分组织权威与一次语义构建所允许读取的资料范围。",
-        "en": "Separated organizational authority from the material admitted to one semantic build."
-      },
-      "status": "admitted",
-      "nodeIds": [
-        "workspace",
-        "knowledge-scope",
-        "workspace-policy"
-      ],
-      "edgeIds": [
-        "workspace-authorizes-scope",
-        "scope-bounded-by-policy"
-      ],
-      "revision": "Revision 18",
-      "delta": 8
-    },
-    {
-      "id": "event-create-relation",
-      "timestamp": "10:24:41",
-      "action": "relation.create",
-      "title": {
-        "zh": "建立 authorized_by 关系",
-        "en": "Create the authorized_by relationship"
-      },
-      "documentId": "document-domain",
-      "learned": {
-        "zh": "任何 KnowledgeScope 必须落在显式授权的 Workspace 内。",
-        "en": "Every KnowledgeScope must remain within an explicitly authorized Workspace."
-      },
-      "semantics": {
-        "zh": "Workspace → KnowledgeScope 形成可审核的资料授权链。",
-        "en": "Workspace → KnowledgeScope now forms an auditable source-authorization chain."
-      },
-      "status": "admitted",
-      "nodeIds": [
-        "workspace",
-        "knowledge-scope"
-      ],
-      "edgeIds": [
-        "workspace-authorizes-scope"
-      ],
-      "revision": "Revision 18",
-      "delta": 1
-    },
-    {
-      "id": "event-discover-cognitive-package",
-      "timestamp": "10:24:48",
-      "action": "entity.discover",
-      "title": {
-        "zh": "识别 CognitivePackageDraft",
-        "en": "Identify CognitivePackageDraft"
-      },
-      "documentId": "document-product",
-      "learned": {
-        "zh": "已接纳的本体修订可以编译为 A3S Use schema-v3 认知包草案。",
-        "en": "An admitted ontology revision can be compiled into an A3S Use schema-v3 cognitive-package draft."
-      },
-      "semantics": {
-        "zh": "连接 KnowledgeRevision、CognitivePackageDraft、OKF 与 Skill。",
-        "en": "Connected KnowledgeRevision, CognitivePackageDraft, OKF, and Skill."
-      },
-      "status": "review",
-      "nodeIds": [
-        "knowledge-revision",
-        "cognitive-package-draft",
-        "okf-bundle",
-        "ontology-skill"
-      ],
-      "edgeIds": [
-        "package-draft-compiled-from-revision",
-        "package-draft-contains-okf",
-        "package-draft-contains-skill"
-      ],
-      "revision": "Revision 18",
-      "delta": 5
-    },
-    {
-      "id": "event-verify-evidence",
-      "timestamp": "10:24:58",
-      "action": "evidence.verify",
-      "title": {
-        "zh": "验证引用与信任等级",
-        "en": "Verify citations and trust levels"
-      },
-      "documentId": "document-interface",
-      "learned": {
-        "zh": "进入 OKF 的概念和关系必须保留公开引用与信任等级。",
-        "en": "Concepts and relationships entering OKF must retain public citations and trust levels."
-      },
-      "semantics": {
-        "zh": "2 条认知包知识路径通过公开证据一致性检查。",
-        "en": "Two package-knowledge paths passed public-evidence consistency checks."
-      },
-      "status": "admitted",
-      "nodeIds": [
-        "evidence",
-        "citation",
-        "trust-level",
-        "okf-bundle"
-      ],
-      "edgeIds": [
-        "okf-cites-evidence",
-        "okf-qualified-by-trust"
-      ],
-      "revision": "Revision 18",
-      "delta": 9
-    },
-    {
-      "id": "event-compile-revision",
-      "timestamp": "10:25:02",
-      "action": "revision.compile",
-      "title": {
-        "zh": "编译 Ontology Revision 18",
-        "en": "Compile Ontology Revision 18"
+        "zh": "构建器读取《架构》",
+        "en": "Builder read “Architecture”"
       },
       "documentId": "document-architecture",
       "learned": {
-        "zh": "只有已验证提案进入不可变知识修订。",
-        "en": "Only validated proposals enter an immutable knowledge revision."
+        "zh": "Agentic Ontology 的本体构建、图谱审阅与认知包交付边界。",
+        "en": "Ontology construction, graph review, and cognitive-package delivery boundaries in Agentic Ontology."
       },
       "semantics": {
-        "zh": "Revision 18 被锁定，并生成认知包草案；尚未由 A3S Use 安装。",
-        "en": "Revision 18 was locked and a cognitive-package draft was generated; A3S Use has not installed it."
+        "zh": "Agentic Ontology、Workspace、KnowledgeScope、Evidence、SemanticProposal 等进入公开投影。",
+        "en": "Agentic Ontology, Workspace, KnowledgeScope, Evidence, SemanticProposal, and others entered the public projection."
       },
       "status": "compiled",
+      "revision": "Public 233f8c4d",
+      "delta": 34,
       "nodeIds": [
+        "document-architecture",
+        "agentic-ontology",
+        "workspace",
+        "knowledge-scope",
+        "evidence",
         "semantic-proposal",
         "knowledge-revision",
-        "compilation-run",
-        "cognitive-package-draft"
-      ],
-      "edgeIds": [
-        "revision-admits-proposal",
-        "compilation-reads-revision",
-        "compilation-produces-package-draft"
-      ],
-      "revision": "Revision 18",
-      "delta": 4
-    },
-    {
-      "id": "event-plan-package-generation",
-      "timestamp": "10:25:08",
-      "action": "package.plan",
-      "title": {
-        "zh": "生成认知包发布计划",
-        "en": "Create the cognitive-package publication plan"
-      },
-      "documentId": "document-interface",
-      "learned": {
-        "zh": "Agent 只能使用 A3S Use 已安装、已锁定并发布的精确 package generation。",
-        "en": "Agents can use only an exact package generation that A3S Use has installed, locked, and published."
-      },
-      "semantics": {
-        "zh": "已规划 OKF 与 Skill 表面；当前演示仍是未安装、未锁定的协议预览。",
-        "en": "OKF and Skill surfaces are planned; this demo remains an uninstalled, unlocked protocol preview."
-      },
-      "status": "review",
-      "nodeIds": [
+        "graph-projection",
+        "cognitive-package-draft",
+        "a3s-parser",
         "a3s-use",
-        "package-generation",
-        "capability-snapshot",
-        "a3s-code",
-        "agent-session"
+        "a3s-code"
       ],
       "edgeIds": [
-        "use-publishes-generation",
-        "snapshot-selects-generation",
-        "code-consumes-snapshot",
-        "code-hosts-session"
-      ],
-      "revision": "Revision 18",
-      "delta": 3
+        "document-architecture-describes-agentic-ontology",
+        "document-architecture-describes-workspace",
+        "document-architecture-describes-knowledge-scope",
+        "document-architecture-describes-evidence",
+        "document-architecture-describes-semantic-proposal",
+        "document-architecture-describes-knowledge-revision",
+        "document-architecture-describes-graph-projection",
+        "document-architecture-describes-cognitive-package-draft",
+        "document-architecture-describes-a3s-parser",
+        "document-architecture-describes-a3s-use",
+        "document-architecture-describes-a3s-code",
+        "ontology-governs-scope",
+        "workspace-owns-scope",
+        "scope-admits-evidence",
+        "parser-produces-evidence",
+        "evidence-grounds-proposal",
+        "proposal-enters-revision",
+        "revision-projects-graph",
+        "revision-compiles-package",
+        "package-handoff-use",
+        "use-delivers-code",
+        "graph-denies-agent-access"
+      ]
     },
     {
-      "id": "event-register-signal",
-      "timestamp": "10:25:12",
-      "action": "learning.observe",
+      "id": "event-document-playground",
+      "timestamp": "2026-08-09T07:39:38.788Z",
+      "action": "document.read",
       "title": {
-        "zh": "登记认知包使用反馈",
-        "en": "Register cognitive-package usage feedback"
+        "zh": "构建器读取《Playground》",
+        "en": "Builder read “Playground”"
       },
-      "documentId": "document-evaluation",
+      "documentId": "document-playground",
       "learned": {
-        "zh": "Agent 使用认知包后的结果只能产生待验证信号，不能直接修改正式本体。",
-        "en": "Outcomes from cognitive-package use can create only a signal awaiting validation; they cannot mutate the canonical ontology."
+        "zh": "Agentic Ontology 3D Playground 的交互与公开数据契约。",
+        "en": "Interaction and public-data contract for the Agentic Ontology 3D Playground."
       },
       "semantics": {
-        "zh": "学习信号进入评估，并可触发下一轮文档探索。",
-        "en": "The learning signal enters evaluation and may trigger another document exploration run."
+        "zh": "Agentic Ontology、KnowledgeRevision、A3S Use、A3S Code进入公开投影。",
+        "en": "Agentic Ontology, KnowledgeRevision, A3S Use, A3S Code entered the public projection."
       },
-      "status": "review",
+      "status": "compiled",
+      "revision": "Public 233f8c4d",
+      "delta": 10,
       "nodeIds": [
-        "learning-signal",
-        "evaluation-run",
-        "knowledge-explorer"
+        "document-playground",
+        "agentic-ontology",
+        "knowledge-revision",
+        "a3s-use",
+        "a3s-code"
       ],
       "edgeIds": [
-        "learning-signal-qualifies-through-evaluation",
-        "signal-informs-explorer"
+        "document-playground-describes-agentic-ontology",
+        "document-playground-describes-knowledge-revision",
+        "document-playground-describes-a3s-use",
+        "document-playground-describes-a3s-code",
+        "use-delivers-code"
+      ]
+    },
+    {
+      "id": "event-document-privacy",
+      "timestamp": "2026-08-09T07:39:38.788Z",
+      "action": "document.read",
+      "title": {
+        "zh": "构建器读取《公开数据边界》",
+        "en": "Builder read “Public data boundary”"
+      },
+      "documentId": "document-privacy",
+      "learned": {
+        "zh": "Playground 的白名单输入、允许字段与禁止发布内容。",
+        "en": "Allow-listed inputs, permitted fields, and blocked content for the Playground."
+      },
+      "semantics": {
+        "zh": "Agentic Ontology、GraphProjection进入公开投影。",
+        "en": "Agentic Ontology, GraphProjection entered the public projection."
+      },
+      "status": "compiled",
+      "revision": "Public 233f8c4d",
+      "delta": 5,
+      "nodeIds": [
+        "document-privacy",
+        "agentic-ontology",
+        "graph-projection"
       ],
-      "revision": "Revision 18",
-      "delta": 2
+      "edgeIds": [
+        "document-privacy-describes-agentic-ontology",
+        "document-privacy-describes-graph-projection"
+      ]
+    },
+    {
+      "id": "event-document-quick-start",
+      "timestamp": "2026-08-09T07:39:38.789Z",
+      "action": "document.read",
+      "title": {
+        "zh": "构建器读取《快速开始》",
+        "en": "Builder read “Quick start”"
+      },
+      "documentId": "document-quick-start",
+      "learned": {
+        "zh": "在本地运行 Agentic Ontology 产品站、文档和 Playground。",
+        "en": "Run the Agentic Ontology product site, docs, and Playground locally."
+      },
+      "semantics": {
+        "zh": "Agentic Ontology进入公开投影。",
+        "en": "Agentic Ontology entered the public projection."
+      },
+      "status": "compiled",
+      "revision": "Public 233f8c4d",
+      "delta": 3,
+      "nodeIds": [
+        "document-quick-start",
+        "agentic-ontology"
+      ],
+      "edgeIds": [
+        "document-quick-start-describes-agentic-ontology"
+      ]
+    },
+    {
+      "id": "event-document-versioning",
+      "timestamp": "2026-08-09T07:39:38.789Z",
+      "action": "document.read",
+      "title": {
+        "zh": "构建器读取《版本管理》",
+        "en": "Builder read “Versioning”"
+      },
+      "documentId": "document-versioning",
+      "learned": {
+        "zh": "Agentic Ontology 文档的语言与版本路由规则。",
+        "en": "Language and version routes for Agentic Ontology documentation."
+      },
+      "semantics": {
+        "zh": "Agentic Ontology进入公开投影。",
+        "en": "Agentic Ontology entered the public projection."
+      },
+      "status": "compiled",
+      "revision": "Public 233f8c4d",
+      "delta": 3,
+      "nodeIds": [
+        "document-versioning",
+        "agentic-ontology"
+      ],
+      "edgeIds": [
+        "document-versioning-describes-agentic-ontology"
+      ]
     }
   ],
   "buildRun": {
-    "id": "build-public-018",
-    "mode": "mock",
+    "id": "public-build-5dc4e817cd16",
+    "mode": "generated",
     "status": "waiting-for-publication",
-    "startedAt": "10:24:26",
+    "startedAt": "2026-08-09T07:39:38.785Z",
     "currentStage": "package",
     "summary": {
-      "zh": "公开文档已编译为 Revision 18 与 schema-v3 草案；流程正在等待 A3S Use 校验、锁定和发布。",
-      "en": "Public documents compiled into Revision 18 and a schema-v3 draft; the run is waiting for A3S Use validation, locking, and publication."
+      "zh": "6 份公开文档已构建为可审阅图谱；认知包仍等待 A3S Use。",
+      "en": "6 public documents were built into a review graph; the package still awaits A3S Use."
     },
     "stages": [
       {
         "id": "scope",
         "sequence": 1,
         "label": {
-          "zh": "范围准入",
-          "en": "Scope admission"
+          "zh": "公开范围",
+          "en": "Public scope"
         },
-        "authority": "Agentic Ontology",
+        "authority": "Public document allow-list",
         "state": "complete",
-        "startedAt": "10:24:26",
-        "completedAt": "10:24:30",
+        "startedAt": "2026-08-09T07:39:38.785Z",
+        "completedAt": "2026-08-09T07:39:38.790Z",
         "summary": {
-          "zh": "KnowledgeScope 只允许六份公开产品文档及其明确版本进入本次构建。",
-          "en": "The KnowledgeScope admits only six public product documents and their declared versions into this build."
+          "zh": "只读取明确列出的 v0.1 中英文文档。",
+          "en": "Reads only the explicitly listed v0.1 Chinese and English documents."
         },
-        "objectLabel": "KnowledgeScope",
-        "objectValue": "scope-public-v0.1-r6",
+        "objectLabel": "PublicDocumentAllowList",
+        "objectValue": "allowlist-5dc4e817cd16",
         "facts": [
-          {
-            "label": {
-              "zh": "Workspace",
-              "en": "Workspace"
-            },
-            "value": {
-              "zh": "contra-sense / Agentic Ontology",
-              "en": "contra-sense / Agentic Ontology"
-            },
-            "state": "verified"
-          },
           {
             "label": {
               "zh": "允许资料",
               "en": "Admitted material"
             },
             "value": {
-              "zh": "6 份公开文档",
-              "en": "6 public documents"
+              "zh": "6 份双语公开文档",
+              "en": "6 bilingual public documents"
             },
             "state": "verified"
           },
           {
             "label": {
-              "zh": "格式与版本",
-              "en": "Formats and versions"
+              "zh": "未读取",
+              "en": "Excluded"
             },
             "value": {
-              "zh": "Markdown / MDX · v0.1 + next",
-              "en": "Markdown / MDX · v0.1 + next"
+              "zh": "源码、Git 与本机位置",
+              "en": "Source, Git, and local locations"
             },
             "state": "verified"
-          },
-          {
-            "label": {
-              "zh": "本次预算",
-              "en": "Build budget"
-            },
-            "value": {
-              "zh": "6 文档 · 2 语言 · 45 秒",
-              "en": "6 docs · 2 locales · 45 sec"
-            },
-            "state": "verified"
-          },
-          {
-            "label": {
-              "zh": "未准入",
-              "en": "Not admitted"
-            },
-            "value": {
-              "zh": "仓库正文、PDF、二进制附件",
-              "en": "Repository bodies, PDFs, binary attachments"
-            },
-            "state": "attention"
           }
         ],
         "gate": {
           "label": {
-            "zh": "范围门禁",
-            "en": "Scope gate"
+            "zh": "范围闭合",
+            "en": "Scope closed"
           },
           "state": "passed",
           "detail": {
-            "zh": "所有资料都命中显式白名单；构建过程不能自行扩大范围。",
-            "en": "Every document matched the explicit allow-list; the build cannot expand its own scope."
+            "zh": "任何未列出的文件、链接文件或越界位置都会使构建失败。",
+            "en": "Any unlisted, linked, or out-of-bound input fails the build."
           }
         },
         "stageReceipt": {
-          "issuer": "Agentic Ontology",
+          "issuer": "Public Disclosure Presenter",
           "state": "issued",
-          "digest": "sha256:scope-018-5f4c"
+          "digest": "sha256:334efb007f93d8ea6b29bf18679f39e7bd38d78c35c3467cb0fbb000c2fe48ac"
         },
         "notices": [
           {
-            "zh": "公开演示不会读取源码或仓库位置。",
-            "en": "The public demo never reads source bodies or repository locations."
+            "zh": "此回执只证明公开投影构建，不代表 A3S Use 生命周期状态。",
+            "en": "This receipt proves the public projection build, not A3S Use lifecycle state."
           }
         ]
       },
@@ -1744,96 +1119,63 @@
         "id": "evidence",
         "sequence": 2,
         "label": {
-          "zh": "证据构建",
-          "en": "Evidence build"
+          "zh": "公开证据",
+          "en": "Public evidence"
         },
-        "authority": "A3S Parser",
+        "authority": "Public Disclosure Presenter",
         "state": "complete",
-        "startedAt": "10:24:30",
-        "completedAt": "10:24:58",
+        "startedAt": "2026-08-09T07:39:38.785Z",
+        "completedAt": "2026-08-09T07:39:38.790Z",
         "summary": {
-          "zh": "固定的 Parser generation 生成类型化证据、摘要与可追溯公开引用。",
-          "en": "A pinned Parser generation produced typed evidence, digests, and traceable public citations."
+          "zh": "从公开文档正文提取概念摘要和文档级引用。",
+          "en": "Extracts concept summaries and document-level citations from public prose."
         },
-        "objectLabel": "EvidenceManifest",
-        "objectValue": "evidence-public-018",
+        "objectLabel": "PublicEvidenceSet",
+        "objectValue": "evidence-5dc4e817cd",
         "facts": [
           {
             "label": {
-              "zh": "生产者 generation",
-              "en": "Producer generation"
+              "zh": "公开概念",
+              "en": "Public concepts"
             },
             "value": {
-              "zh": "A3S Parser · markdown@0.4.2（演示）",
-              "en": "A3S Parser · markdown@0.4.2 (demo)"
+              "zh": "11 个",
+              "en": "11"
             },
             "state": "verified"
           },
           {
             "label": {
-              "zh": "不可变资料版本",
-              "en": "Immutable document versions"
+              "zh": "引用方式",
+              "en": "Citation mode"
             },
             "value": {
-              "zh": "6 / 6 已固定",
-              "en": "6 / 6 pinned"
+              "zh": "文档级公开引用",
+              "en": "Public document references"
             },
             "state": "verified"
-          },
-          {
-            "label": {
-              "zh": "类型化证据",
-              "en": "Typed evidence"
-            },
-            "value": {
-              "zh": "41 项",
-              "en": "41 items"
-            },
-            "state": "verified"
-          },
-          {
-            "label": {
-              "zh": "公开引用覆盖",
-              "en": "Public citation coverage"
-            },
-            "value": {
-              "zh": "34 / 34 语义节点",
-              "en": "34 / 34 semantic nodes"
-            },
-            "state": "verified"
-          },
-          {
-            "label": {
-              "zh": "拒绝项",
-              "en": "Rejected items"
-            },
-            "value": {
-              "zh": "2 项不受支持的附件声明",
-              "en": "2 unsupported attachment declarations"
-            },
-            "state": "attention"
           }
         ],
         "gate": {
           "label": {
-            "zh": "证据完整性",
-            "en": "Evidence integrity"
+            "zh": "双语证据可达",
+            "en": "Bilingual evidence reachable"
           },
           "state": "passed",
           "detail": {
-            "zh": "每项被接纳证据都绑定生产者 generation、资料摘要与公开引用。",
-            "en": "Every admitted evidence item binds its producer generation, document digest, and public citation."
+            "zh": "每个公开概念都必须在中英文文档中出现。",
+            "en": "Every public concept must occur in both language documents."
           }
         },
         "stageReceipt": {
-          "issuer": "Agentic Ontology",
+          "issuer": "Public Disclosure Presenter",
           "state": "issued",
-          "digest": "sha256:evidence-018-84b1"
+          "digest": "sha256:3ac8b9e6650ab922f05095c57ea9072580d915424aa45f0506a8f05e82ace260"
         },
         "notices": [
           {
-            "zh": "文档内容被当作不可信资料，不会改变任务权限。",
-            "en": "Document content is treated as untrusted data and cannot change task authority."
+            "zh": "此回执只证明公开投影构建，不代表 A3S Use 生命周期状态。",
+            "en": "This receipt proves the public projection build, not A3S Use lifecycle state."
           }
         ]
       },
@@ -1841,96 +1183,63 @@
         "id": "review",
         "sequence": 3,
         "label": {
-          "zh": "提案复核",
-          "en": "Proposal review"
+          "zh": "披露复核",
+          "en": "Disclosure review"
         },
-        "authority": "Agentic Ontology",
+        "authority": "Public disclosure policy",
         "state": "complete",
-        "startedAt": "10:24:38",
-        "completedAt": "10:25:00",
+        "startedAt": "2026-08-09T07:39:38.785Z",
+        "completedAt": "2026-08-09T07:39:38.790Z",
         "summary": {
-          "zh": "候选概念、关系和边界声明先经过确定性校验，再按风险策略决定是否需要人工复核。",
-          "en": "Candidate concepts, relations, and boundary claims passed deterministic checks before risk policy decided on human review."
+          "zh": "只允许获批概念、关系和展示字段进入图谱。",
+          "en": "Admits only approved concepts, relationships, and display fields."
         },
-        "objectLabel": "SemanticProposalSet",
-        "objectValue": "proposal-set-018",
+        "objectLabel": "DisclosurePolicy",
+        "objectValue": "agentic-ontology/public-disclosure-presenter-v2",
         "facts": [
           {
             "label": {
-              "zh": "类型化提案",
-              "en": "Typed proposals"
+              "zh": "披露策略",
+              "en": "Disclosure policy"
             },
             "value": {
-              "zh": "13 项",
-              "en": "13 items"
+              "zh": "闭合字段与关系白名单",
+              "en": "Closed fields and relation allow-list"
             },
             "state": "verified"
           },
           {
             "label": {
-              "zh": "已接受",
-              "en": "Accepted"
+              "zh": "源码位置",
+              "en": "Source locations"
             },
             "value": {
-              "zh": "10 项",
-              "en": "10 items"
-            },
-            "state": "verified"
-          },
-          {
-            "label": {
-              "zh": "人工复核后接受",
-              "en": "Accepted after review"
-            },
-            "value": {
-              "zh": "1 项 · Agent 不回退图谱",
-              "en": "1 item · no Agent graph fallback"
-            },
-            "state": "verified"
-          },
-          {
-            "label": {
-              "zh": "已拒绝",
-              "en": "Rejected"
-            },
-            "value": {
-              "zh": "2 项 · 证据不足",
-              "en": "2 items · insufficient evidence"
-            },
-            "state": "attention"
-          },
-          {
-            "label": {
-              "zh": "自批准",
-              "en": "Self approval"
-            },
-            "value": {
-              "zh": "禁止",
-              "en": "Forbidden"
+              "zh": "0 个公开字段",
+              "en": "0 public fields"
             },
             "state": "verified"
           }
         ],
         "gate": {
           "label": {
-            "zh": "语义准入",
-            "en": "Semantic admission"
+            "zh": "无实现泄露",
+            "en": "No implementation disclosure"
           },
           "state": "passed",
           "detail": {
-            "zh": "被接受语义均可追溯到已准入证据；拒绝项不会进入修订。",
-            "en": "Every accepted semantic item reaches admitted evidence; rejected items cannot enter the revision."
+            "zh": "内部图谱、源码、路径、Git 与 Agent 查询载荷均被拒绝。",
+            "en": "Internal graphs, source, paths, Git data, and Agent query payloads are rejected."
           }
         },
         "stageReceipt": {
-          "issuer": "Agentic Ontology",
+          "issuer": "Public Disclosure Presenter",
           "state": "issued",
-          "digest": "sha256:proposal-018-1fc2"
+          "digest": "sha256:970612bb69d6119d257c897d6a99a1d3ffa966c5862c50fd34332e9e5885c285"
         },
         "notices": [
           {
-            "zh": "模型输出始终是提案，不是正式知识。",
-            "en": "Model output remains a proposal, never accepted knowledge."
+            "zh": "此回执只证明公开投影构建，不代表 A3S Use 生命周期状态。",
+            "en": "This receipt proves the public projection build, not A3S Use lifecycle state."
           }
         ]
       },
@@ -1938,96 +1247,63 @@
         "id": "revision",
         "sequence": 4,
         "label": {
-          "zh": "修订编译",
-          "en": "Revision compile"
+          "zh": "公开投影",
+          "en": "Public projection"
         },
-        "authority": "Agentic Ontology",
+        "authority": "Public Graph Projector",
         "state": "complete",
-        "startedAt": "10:25:00",
-        "completedAt": "10:25:02",
+        "startedAt": "2026-08-09T07:39:38.785Z",
+        "completedAt": "2026-08-09T07:39:38.790Z",
         "summary": {
-          "zh": "已接受提案被编译成不可变 Revision 18，并以 compare-and-swap 激活。",
-          "en": "Accepted proposals compiled into immutable Revision 18 and activated through compare-and-swap."
+          "zh": "生成只供人审阅的语义节点、关系和学习事件。",
+          "en": "Builds human-review-only semantic nodes, relationships, and learning events."
         },
-        "objectLabel": "KnowledgeRevision",
-        "objectValue": "revision-demo-018",
+        "objectLabel": "PublicGraphRevision",
+        "objectValue": "public-revision-233f8c4d8eb7",
         "facts": [
           {
             "label": {
-              "zh": "父修订",
-              "en": "Parent revision"
+              "zh": "公开修订",
+              "en": "Public revision"
             },
             "value": {
-              "zh": "Revision 17",
-              "en": "Revision 17"
+              "zh": "public-revision-233f8c4d8eb7",
+              "en": "public-revision-233f8c4d8eb7"
             },
             "state": "verified"
           },
           {
             "label": {
-              "zh": "候选修订",
-              "en": "Candidate revision"
+              "zh": "关系",
+              "en": "Relationships"
             },
             "value": {
-              "zh": "Revision 18 · 不可变",
-              "en": "Revision 18 · immutable"
-            },
-            "state": "verified"
-          },
-          {
-            "label": {
-              "zh": "原子激活",
-              "en": "Atomic activation"
-            },
-            "value": {
-              "zh": "expected 17 → active 18",
-              "en": "expected 17 → active 18"
-            },
-            "state": "verified"
-          },
-          {
-            "label": {
-              "zh": "确定性重建",
-              "en": "Deterministic rebuild"
-            },
-            "value": {
-              "zh": "摘要一致",
-              "en": "Digest matched"
-            },
-            "state": "verified"
-          },
-          {
-            "label": {
-              "zh": "回退选择",
-              "en": "Rollback selection"
-            },
-            "value": {
-              "zh": "Revision 17 仍可寻址",
-              "en": "Revision 17 remains addressable"
+              "zh": "32 条",
+              "en": "32"
             },
             "state": "verified"
           }
         ],
         "gate": {
           "label": {
-            "zh": "激活门禁",
-            "en": "Activation gate"
+            "zh": "图谱边界固定",
+            "en": "Graph boundary fixed"
           },
           "state": "passed",
           "detail": {
-            "zh": "激活成功前旧修订保持有效；并发写入不能产生两个 active head。",
-            "en": "The previous revision stays valid until activation succeeds; concurrent writes cannot create two active heads."
+            "zh": "graphAudience 为 human-review，agentGraphAccess 为 false。",
+            "en": "graphAudience is human-review and agentGraphAccess is false."
           }
         },
         "stageReceipt": {
-          "issuer": "Agentic Ontology",
+          "issuer": "Public Disclosure Presenter",
           "state": "issued",
-          "digest": "sha256:revision-018-a62e"
+          "digest": "sha256:7ea7137b64fb0e9cb5371cb4e4338249bee2809358d379deb6c481e482095b4d"
         },
         "notices": [
           {
-            "zh": "3D 图谱是 Revision 18 的人类审阅投影。",
-            "en": "The 3D graph is a human-review projection of Revision 18."
+            "zh": "此回执只证明公开投影构建，不代表 A3S Use 生命周期状态。",
+            "en": "This receipt proves the public projection build, not A3S Use lifecycle state."
           }
         ]
       },
@@ -2035,68 +1311,35 @@
         "id": "package",
         "sequence": 5,
         "label": {
-          "zh": "认知包发布",
-          "en": "Package publication"
+          "zh": "认知包交付",
+          "en": "Package delivery"
         },
         "authority": "A3S Use",
         "state": "waiting",
-        "startedAt": "10:25:02",
+        "startedAt": "2026-08-09T07:39:38.790Z",
         "completedAt": null,
         "summary": {
-          "zh": "schema-v3 草案已生成；安装、依赖解析、锁定与发布仍在等待 A3S Use 的权威回执。",
-          "en": "The schema-v3 draft exists; installation, dependency resolution, locking, and publication still await authoritative A3S Use receipts."
+          "zh": "schema-v3 候选仅作预览，正在等待 A3S Use 生命周期回执。",
+          "en": "The schema-v3 candidate is a preview awaiting an A3S Use lifecycle receipt."
         },
-        "objectLabel": "CognitivePackageDraft",
-        "objectValue": "contra-sense/agentic-ontology@0.1.0-demo.18",
+        "objectLabel": "CognitivePackagePreview",
+        "objectValue": "contra-sense/agentic-ontology@0.1.0",
         "facts": [
           {
             "label": {
-              "zh": "包结构",
-              "en": "Package shape"
+              "zh": "候选格式",
+              "en": "Candidate schema"
             },
             "value": {
-              "zh": "schema-v3 · knowledge profile",
-              "en": "schema-v3 · knowledge profile"
+              "zh": "schema v3 · knowledge",
+              "en": "schema v3 · knowledge"
             },
             "state": "verified"
           },
           {
             "label": {
-              "zh": "认知表面",
-              "en": "Cognitive surfaces"
-            },
-            "value": {
-              "zh": "OKF 预览 · Skill 计划",
-              "en": "OKF preview · Skill planned"
-            },
-            "state": "verified"
-          },
-          {
-            "label": {
-              "zh": "依赖校验",
-              "en": "Dependency validation"
-            },
-            "value": {
-              "zh": "未开始",
-              "en": "Not started"
-            },
-            "state": "pending"
-          },
-          {
-            "label": {
-              "zh": "安装与锁定",
-              "en": "Install and lock"
-            },
-            "value": {
-              "zh": "未安装 · 未锁定",
-              "en": "Not installed · not locked"
-            },
-            "state": "pending"
-          },
-          {
-            "label": {
-              "zh": "发布 generation",
-              "en": "Published generation"
+              "zh": "A3S Use 回执",
+              "en": "A3S Use receipt"
             },
             "value": {
               "zh": "尚未签发",
@@ -2107,13 +1350,13 @@
         ],
         "gate": {
           "label": {
-            "zh": "A3S Use 生命周期",
-            "en": "A3S Use lifecycle"
+            "zh": "等待 A3S Use",
+            "en": "Await A3S Use"
           },
           "state": "waiting",
           "detail": {
-            "zh": "Agentic Ontology 不能伪造安装或发布状态；没有 A3S Use 回执就保持未发布。",
-            "en": "Agentic Ontology cannot synthesize install or publication state; without an A3S Use receipt it remains unpublished."
+            "zh": "没有安装、锁定或发布回执，因此不会显示成功。",
+            "en": "No install, lock, or publication receipt exists, so success is not shown."
           }
         },
         "stageReceipt": {
@@ -2123,8 +1366,8 @@
         },
         "notices": [
           {
-            "zh": "当前右侧面板展示的是草案，不是可供 Agent 使用的 generation。",
-            "en": "The right panel shows a draft, not a generation an Agent can consume."
+            "zh": "公开图谱不是 Agent 的认知输入。",
+            "en": "The public graph is not Agent cognitive input."
           }
         ]
       },
@@ -2137,80 +1380,47 @@
         },
         "authority": "A3S Code",
         "state": "blocked",
-        "startedAt": "—",
+        "startedAt": "2026-08-09T07:39:38.790Z",
         "completedAt": null,
         "summary": {
-          "zh": "任务必须绑定已发布的精确 generation；当前没有可用 generation，因此会话明确失败且不回退读取图谱。",
-          "en": "The task must bind an exact published generation; none exists, so session opening fails explicitly and never falls back to the graph."
+          "zh": "没有已发布的精确 generation，Agent 评估保持阻止。",
+          "en": "No exact generation is published, so Agent evaluation remains blocked."
         },
-        "objectLabel": "AgentTask",
-        "objectValue": "ontology-answer-eval-018",
+        "objectLabel": "AgentEvaluation",
+        "objectValue": "blocked:no-published-generation",
         "facts": [
           {
             "label": {
-              "zh": "generation 引用",
-              "en": "Generation reference"
+              "zh": "Agent generation",
+              "en": "Agent generation"
             },
             "value": {
-              "zh": "缺失",
-              "en": "Missing"
-            },
-            "state": "attention"
-          },
-          {
-            "label": {
-              "zh": "锁定摘要",
-              "en": "Lock digest"
-            },
-            "value": {
-              "zh": "未签发",
-              "en": "Not issued"
+              "zh": "不可用",
+              "en": "Unavailable"
             },
             "state": "pending"
           },
           {
             "label": {
-              "zh": "任务状态",
-              "en": "Task state"
+              "zh": "原因",
+              "en": "Reason"
             },
             "value": {
-              "zh": "未启动",
-              "en": "Not started"
+              "zh": "认知包尚未发布",
+              "en": "Package not published"
             },
             "state": "pending"
-          },
-          {
-            "label": {
-              "zh": "图谱回退",
-              "en": "Graph fallback"
-            },
-            "value": {
-              "zh": "禁止",
-              "en": "Disabled"
-            },
-            "state": "verified"
-          },
-          {
-            "label": {
-              "zh": "后续反馈",
-              "en": "Future feedback"
-            },
-            "value": {
-              "zh": "仅追加 LearningSignal",
-              "en": "Append-only LearningSignal"
-            },
-            "state": "verified"
           }
         ],
         "gate": {
           "label": {
-            "zh": "会话准入",
-            "en": "Session admission"
+            "zh": "缺少精确 generation",
+            "en": "Exact generation missing"
           },
           "state": "blocked",
           "detail": {
-            "zh": "缺少 generation 或锁定摘要时，A3S Code 不会创建 Agent 会话。",
-            "en": "A3S Code does not create an Agent session without a generation and lock digest."
+            "zh": "A3S Code 不会回退到 3D 图谱。",
+            "en": "A3S Code does not fall back to the 3D graph."
           }
         },
         "stageReceipt": {
@@ -2220,8 +1430,8 @@
         },
         "notices": [
           {
-            "zh": "评估结果只能形成下一轮学习信号，不能直接修改 Revision 18。",
-            "en": "Evaluation results can only form a future learning signal; they cannot mutate Revision 18."
+            "zh": "图谱可用不代表认知包已经发布。",
+            "en": "Graph availability does not mean the package is published."
           }
         ]
       }
@@ -2231,7 +1441,7 @@
     "packageId": "contra-sense/agentic-ontology",
     "schemaVersion": 3,
     "profile": "knowledge",
-    "version": "0.1.0-demo.18",
+    "version": "0.1.0",
     "status": "preview",
     "installState": "not-installed",
     "lockState": "not-locked",
@@ -2242,8 +1452,8 @@
         "name": "ontology-knowledge",
         "status": "preview",
         "summary": {
-          "zh": "概念、关系与公开引用。",
-          "en": "Concepts, relationships, and public citations."
+          "zh": "从公开文档投影的概念、关系与引用预览。",
+          "en": "Preview of concepts, relationships, and citations projected from public documentation."
         }
       },
       {
@@ -2251,18 +1461,18 @@
         "name": "use-ontology",
         "status": "planned",
         "summary": {
-          "zh": "Agent 使用这套知识时应遵循的说明与边界。",
-          "en": "Instructions and boundaries for Agents using this knowledge."
+          "zh": "Agent 使用认知包时遵循的边界；当前尚未由 A3S Use 发布。",
+          "en": "Boundaries for Agents using the package; not yet published by A3S Use."
         }
       }
     ]
   },
   "receipt": {
-    "buildId": "demo-cb625428579b",
-    "digest": "sha256:cb625428579bec52a2c9f7f52a7dec6b930f33edf3243d09c6e6395914cb4c3e",
-    "nodeCount": 34,
-    "edgeCount": 48,
-    "eventCount": 8,
+    "buildId": "build-e77037beb186",
+    "digest": "sha256:e77037beb18636c2ddb46305a10f40f0bbc0cd337b108f50109a838adb7c3b71",
+    "nodeCount": 17,
+    "edgeCount": 32,
+    "eventCount": 6,
     "documentCount": 6,
     "privacyStatus": "public-documents-only"
   }

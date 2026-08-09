@@ -13,5 +13,5 @@
   <text x="84" y="366" fill="#101827" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="74" font-weight="750">Agent 的认知包</text>
   <text x="84" y="438" fill="#56657b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="28">图谱供人审阅 · 认知包由 A3S Use 发布</text>
   <rect x="84" y="490" width="286" height="48" rx="12" fill="#0e1b35"/>
-  <text x="106" y="522" fill="#77f0ce" font-family="monospace" font-size="19">MOCK GRAPH · NO SOURCE CODE</text>
+  <text x="106" y="522" fill="#77f0ce" font-family="monospace" font-size="19">GENERATED GRAPH · NO SOURCE CODE</text>
 </svg>

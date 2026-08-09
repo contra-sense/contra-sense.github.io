@@ -4,12 +4,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>公开数据边界 - Agentic Ontology Docs</title>
 <link href="/agentic-ontology/docs/static/css/styles.2acf4093cb.css" rel="stylesheet">
-<link rel="preload" href="/agentic-ontology/docs/static/js/async/route-90f897504185.0aa628d9bd.js" as="script">
+<link rel="preload" href="/agentic-ontology/docs/static/js/async/route-90f897504185.f55e2df372.js" as="script">
 <script defer src="/agentic-ontology/docs/static/js/styles.41e78f9ad1.js"></script>
 <script defer src="/agentic-ontology/docs/static/js/lib-react.a62c56e73e.js"></script>
 <script defer src="/agentic-ontology/docs/static/js/lib-router.ff07978680.js"></script>
 <script defer src="/agentic-ontology/docs/static/js/798.8c6725154b.js"></script>
-<script defer src="/agentic-ontology/docs/static/js/index.9e8f6ee9ac.js"></script>
+<script defer src="/agentic-ontology/docs/static/js/index.26255b71d8.js"></script>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Rspress v2.0.19">
 <link rel="alternate" hreflang="zh" href="https://contra-sense.github.io/agentic-ontology/docs/privacy">
@@ -28,7 +28,7 @@
 <li>白名单公开文档的显示标题与公开 URL；</li>
 <li>语义概念、关系、状态和公开引用；</li>
 <li>Agent 学习事件、知识修订和生成回执；</li>
-<li>明确标记的 mock 认知包标识、状态与表面摘要。</li>
+<li>明确标记为未发布的认知包标识、状态与表面摘要。</li>
 </ul>
 <h2 class="rp-toc-include" id="禁止进入公开产物"><a href="#禁止进入公开产物" class="rp-header-anchor rp-link" aria-hidden="true">#</a>禁止进入公开产物</h2>
 <ul>
@@ -36,9 +36,10 @@
 <li>仓库文件路径、行号、字节位置或本机绝对路径；</li>
 <li>Git commit、branch、历史或源树信息；</li>
 <li>Source Map、凭据、Secret 或私有 URL。</li>
+<li>内部 <code>GraphProjection</code> 原始 JSON；匿名证据 ID 不等于整份语义文案已获公开批准。</li>
 </ul>
 <h2 class="rp-toc-include" id="构建门禁"><a href="#构建门禁" class="rp-header-anchor rp-link" aria-hidden="true">#</a>构建门禁</h2>
-<p>生成器拒绝危险字段和任何 Agent 图谱查询载荷；静态站检查器扫描生成 JSON、HTML、JavaScript、CSS 与文件清单。发现禁止字段、绝对路径、Source Map 或不安全引用时，构建失败并停止部署。</p><!--/$--></div><footer class="rp-doc-footer"><div class="rp-doc-footer__edit"><div class="rp-last-updated"><p>最后更新于<!-- -->: <span>2026/8/8 15:38:41</span></p></div></div><div class="rp-doc-footer__divider"></div><div class="rp-prev-next-page"><div class="rp-prev-next-page__placeholder"></div><a href="/agentic-ontology/docs/" class="rp-prev-next-page__item rp-prev-next-page__next rp-link"><span class="rp-prev-next-page__item__desc">下一页</span><span class="rp-prev-next-page__item__title"><span>概览</span><svg width="1em" height="1em" viewBox="0 0 32 32" class="rp-prev-next-page__icon"><path fill="currentColor" d="M22 16 12 26l-1.4-1.4 8.6-8.6-8.6-8.6L12 6z"></path></svg></span></a></div></footer></main></div><aside class="rp-doc-layout__outline rp-scrollbar"><div class="rp-outline"><div class="rp-outline__title">目录<svg width="14" height="14" class="rp-progress-circle"><circle cx="7" cy="7" r="6" stroke-linecap="round" fill="none" stroke="var(--rp-c-divider-light)" stroke-width="2"></circle><circle cx="7" cy="7" r="6" stroke-linecap="round" fill="none" stroke="var(--rp-c-brand)" stroke-width="2" stroke-dasharray="37.69911184307752" stroke-dashoffset="37.69911184307752" transform="rotate(-90 7 7)" style="transition:stroke-dashoffset 0.3s"></circle></svg></div><nav class="rp-outline__toc rp-scrollbar"><a href="#允许进入公开产物" class="rp-toc-item rp-link" title="允许进入公开产物" style="padding-left:0" data-depth="0"><span class="rp-toc-item__text rp-doc">允许进入公开产物</span></a><a href="#禁止进入公开产物" class="rp-toc-item rp-link" title="禁止进入公开产物" style="padding-left:0" data-depth="0"><span class="rp-toc-item__text rp-doc">禁止进入公开产物</span></a><a href="#构建门禁" class="rp-toc-item rp-link" title="构建门禁" style="padding-left:0" data-depth="0"><span class="rp-toc-item__text rp-doc">构建门禁</span></a></nav><div class="rp-outline__divider"></div><div class="rp-outline__bottom"></div></div></aside></div></div>
+<p>当前生成器默认执行独立 disclosure presenter，只读取明确列出的 <code>v0.1</code> 双语文档。链接文件、越界真实路径、超限文件、缺少双语概念或缺少关系共同证据都会使构建失败。生成后，闭合字段契约会检查引用、边界、未发布状态和时间，并用摘要回执绑定完整产物；静态站检查器继续扫描 JSON、HTML、JavaScript、CSS 与文件清单。禁止字段、危险字符串、绝对路径、Source Map、不安全引用或回执不一致都会停止部署。</p><!--/$--></div><footer class="rp-doc-footer"><div class="rp-doc-footer__edit"><div class="rp-last-updated"><p>最后更新于<!-- -->: <span>2026/8/9 14:54:01</span></p></div></div><div class="rp-doc-footer__divider"></div><div class="rp-prev-next-page"><div class="rp-prev-next-page__placeholder"></div><a href="/agentic-ontology/docs/" class="rp-prev-next-page__item rp-prev-next-page__next rp-link"><span class="rp-prev-next-page__item__desc">下一页</span><span class="rp-prev-next-page__item__title"><span>概览</span><svg width="1em" height="1em" viewBox="0 0 32 32" class="rp-prev-next-page__icon"><path fill="currentColor" d="M22 16 12 26l-1.4-1.4 8.6-8.6-8.6-8.6L12 6z"></path></svg></span></a></div></footer></main></div><aside class="rp-doc-layout__outline rp-scrollbar"><div class="rp-outline"><div class="rp-outline__title">目录<svg width="14" height="14" class="rp-progress-circle"><circle cx="7" cy="7" r="6" stroke-linecap="round" fill="none" stroke="var(--rp-c-divider-light)" stroke-width="2"></circle><circle cx="7" cy="7" r="6" stroke-linecap="round" fill="none" stroke="var(--rp-c-brand)" stroke-width="2" stroke-dasharray="37.69911184307752" stroke-dashoffset="37.69911184307752" transform="rotate(-90 7 7)" style="transition:stroke-dashoffset 0.3s"></circle></svg></div><nav class="rp-outline__toc rp-scrollbar"><a href="#允许进入公开产物" class="rp-toc-item rp-link" title="允许进入公开产物" style="padding-left:0" data-depth="0"><span class="rp-toc-item__text rp-doc">允许进入公开产物</span></a><a href="#禁止进入公开产物" class="rp-toc-item rp-link" title="禁止进入公开产物" style="padding-left:0" data-depth="0"><span class="rp-toc-item__text rp-doc">禁止进入公开产物</span></a><a href="#构建门禁" class="rp-toc-item rp-link" title="构建门禁" style="padding-left:0" data-depth="0"><span class="rp-toc-item__text rp-doc">构建门禁</span></a></nav><div class="rp-outline__divider"></div><div class="rp-outline__bottom"></div></div></aside></div></div>
     <div id="__rspress_modal_container"></div>
   </body>
 </html>

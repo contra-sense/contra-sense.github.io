@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "product": "Agentic Ontology",
   "mode": "generated",
-  "generatedAt": "2026-08-10T00:25:50.387Z",
+  "generatedAt": "2026-08-10T00:49:45.629Z",
   "revision": {
     "id": "public-revision-233f8c4d8eb7",
     "label": "Public 233f8c4d",
@@ -831,7 +831,7 @@
   "events": [
     {
       "id": "event-document-overview",
-      "timestamp": "2026-08-10T00:25:50.349Z",
+      "timestamp": "2026-08-10T00:49:45.624Z",
       "action": "document.read",
       "title": {
         "zh": "构建器读取《Agentic Ontology 文档》",
@@ -861,7 +861,7 @@
     },
     {
       "id": "event-document-architecture",
-      "timestamp": "2026-08-10T00:25:50.358Z",
+      "timestamp": "2026-08-10T00:49:45.626Z",
       "action": "document.read",
       "title": {
         "zh": "构建器读取《架构》",
@@ -920,7 +920,7 @@
     },
     {
       "id": "event-document-playground",
-      "timestamp": "2026-08-10T00:25:50.371Z",
+      "timestamp": "2026-08-10T00:49:45.626Z",
       "action": "document.read",
       "title": {
         "zh": "构建器读取《Playground》",
@@ -955,7 +955,7 @@
     },
     {
       "id": "event-document-privacy",
-      "timestamp": "2026-08-10T00:25:50.373Z",
+      "timestamp": "2026-08-10T00:49:45.627Z",
       "action": "document.read",
       "title": {
         "zh": "构建器读取《公开数据边界》",
@@ -985,7 +985,7 @@
     },
     {
       "id": "event-document-quick-start",
-      "timestamp": "2026-08-10T00:25:50.376Z",
+      "timestamp": "2026-08-10T00:49:45.627Z",
       "action": "document.read",
       "title": {
         "zh": "构建器读取《快速开始》",
@@ -1013,7 +1013,7 @@
     },
     {
       "id": "event-document-versioning",
-      "timestamp": "2026-08-10T00:25:50.380Z",
+      "timestamp": "2026-08-10T00:49:45.627Z",
       "action": "document.read",
       "title": {
         "zh": "构建器读取《版本管理》",
@@ -1041,10 +1041,10 @@
     }
   ],
   "buildRun": {
-    "id": "public-build-f34d3bfcd11c",
+    "id": "public-build-7f3eb2f7fec7",
     "mode": "generated",
     "status": "waiting-for-publication",
-    "startedAt": "2026-08-10T00:25:50.349Z",
+    "startedAt": "2026-08-10T00:49:45.624Z",
     "currentStage": "package",
     "summary": {
       "zh": "6 份公开文档已构建为可审阅图谱；认知包仍等待 A3S Use。",
@@ -1060,14 +1060,14 @@
         },
         "authority": "Public document allow-list",
         "state": "complete",
-        "startedAt": "2026-08-10T00:25:50.349Z",
-        "completedAt": "2026-08-10T00:25:50.387Z",
+        "startedAt": "2026-08-10T00:49:45.624Z",
+        "completedAt": "2026-08-10T00:49:45.629Z",
         "summary": {
           "zh": "只读取明确列出的 v0.1 中英文文档。",
           "en": "Reads only the explicitly listed v0.1 Chinese and English documents."
         },
         "objectLabel": "PublicDocumentAllowList",
-        "objectValue": "allowlist-f34d3bfcd11c",
+        "objectValue": "allowlist-7f3eb2f7fec7",
         "facts": [
           {
             "label": {
@@ -1106,7 +1106,7 @@
         "stageReceipt": {
           "issuer": "Public Disclosure Presenter",
           "state": "issued",
-          "digest": "sha256:b81c1f1bcda7cd2585248b59ef545eb3e51a47cf8bbc8289316d864ece07c127"
+          "digest": "sha256:d54b044cb935231d125a0b9032bedc76d48129823d7514432712c33d77bb949b"
         },
         "notices": [
           {
@@ -1124,14 +1124,14 @@
         },
         "authority": "Public Disclosure Presenter",
         "state": "complete",
-        "startedAt": "2026-08-10T00:25:50.349Z",
-        "completedAt": "2026-08-10T00:25:50.387Z",
+        "startedAt": "2026-08-10T00:49:45.624Z",
+        "completedAt": "2026-08-10T00:49:45.629Z",
         "summary": {
           "zh": "从公开文档正文提取概念摘要和文档级引用。",
           "en": "Extracts concept summaries and document-level citations from public prose."
         },
         "objectLabel": "PublicEvidenceSet",
-        "objectValue": "evidence-f34d3bfcd1",
+        "objectValue": "evidence-7f3eb2f7fe",
         "facts": [
           {
             "label": {
@@ -1170,7 +1170,7 @@
         "stageReceipt": {
           "issuer": "Public Disclosure Presenter",
           "state": "issued",
-          "digest": "sha256:e219ad713055a81f2802cbf820ce06efc5bed896b6eedda37b9731a7d59d91b3"
+          "digest": "sha256:55569c1d99d2397dcb6e8707482c1517b135d32ae5ac4108d0d26805203cc504"
         },
         "notices": [
           {
@@ -1188,8 +1188,8 @@
         },
         "authority": "Public disclosure policy",
         "state": "complete",
-        "startedAt": "2026-08-10T00:25:50.349Z",
-        "completedAt": "2026-08-10T00:25:50.387Z",
+        "startedAt": "2026-08-10T00:49:45.624Z",
+        "completedAt": "2026-08-10T00:49:45.629Z",
         "summary": {
           "zh": "只允许获批概念、关系和展示字段进入图谱。",
           "en": "Admits only approved concepts, relationships, and display fields."
@@ -1234,7 +1234,7 @@
         "stageReceipt": {
           "issuer": "Public Disclosure Presenter",
           "state": "issued",
-          "digest": "sha256:b495a2ecd5ea96b3809d358e1c6f0c6c3f358538dc13b477e6716fb55f01ba4a"
+          "digest": "sha256:e1943f26cf6de8dadfa0c4076ee853c642bc127d68a20497bc4e7695879d9021"
         },
         "notices": [
           {
@@ -1252,8 +1252,8 @@
         },
         "authority": "Public Graph Projector",
         "state": "complete",
-        "startedAt": "2026-08-10T00:25:50.349Z",
-        "completedAt": "2026-08-10T00:25:50.387Z",
+        "startedAt": "2026-08-10T00:49:45.624Z",
+        "completedAt": "2026-08-10T00:49:45.629Z",
         "summary": {
           "zh": "生成只供人审阅的语义节点、关系和学习事件。",
           "en": "Builds human-review-only semantic nodes, relationships, and learning events."
@@ -1298,7 +1298,7 @@
         "stageReceipt": {
           "issuer": "Public Disclosure Presenter",
           "state": "issued",
-          "digest": "sha256:3e00a04404fbd14de0e000823f7daf5a2a6175591c394c6178a1a617f316ab0f"
+          "digest": "sha256:2964db3d822b8ddc34ff8dda00dbcf14367f2059cf65a1516be241f4d5906621"
         },
         "notices": [
           {
@@ -1316,7 +1316,7 @@
         },
         "authority": "A3S Use",
         "state": "waiting",
-        "startedAt": "2026-08-10T00:25:50.387Z",
+        "startedAt": "2026-08-10T00:49:45.629Z",
         "completedAt": null,
         "summary": {
           "zh": "schema-v3 候选仅作预览，正在等待 A3S Use 生命周期回执。",
@@ -1380,7 +1380,7 @@
         },
         "authority": "A3S Code",
         "state": "blocked",
-        "startedAt": "2026-08-10T00:25:50.387Z",
+        "startedAt": "2026-08-10T00:49:45.629Z",
         "completedAt": null,
         "summary": {
           "zh": "没有已发布的精确 generation，Agent 评估保持阻止。",
@@ -1468,8 +1468,8 @@
     ]
   },
   "receipt": {
-    "buildId": "build-8773212bfd3a",
-    "digest": "sha256:8773212bfd3a3f2b3d28bf683d09fe126bcd7a932808d025a3a9408a5047be12",
+    "buildId": "build-1cfd3dc505b8",
+    "digest": "sha256:1cfd3dc505b897d0b9f55511f2865bd1eb5a688d06b0672c78620f6e267f481c",
     "nodeCount": 17,
     "edgeCount": 32,
     "eventCount": 6,

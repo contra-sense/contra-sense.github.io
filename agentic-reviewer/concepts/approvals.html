@@ -5,12 +5,12 @@
 <title>审批与验证 - Agentic Reviewer</title>
 <script>{;const saved = localStorage.getItem('rspress-theme-appearance');const preferDark = window.matchMedia('(prefers-color-scheme: dark)').matches;const defaultTheme = 'auto';const theme = saved === 'light' || saved === 'dark' || saved === 'auto' ? saved : defaultTheme;const isDark = theme === 'auto' ? preferDark : theme === 'dark';document.documentElement.classList.toggle('dark', isDark);document.documentElement.classList.toggle('rp-dark', isDark);document.documentElement.style.colorScheme = isDark ? 'dark' : 'light';}</script>
 <link href="/agentic-reviewer/static/css/styles.50fad227a8.css" rel="stylesheet">
-<link rel="preload" href="/agentic-reviewer/static/js/async/route-83551b474dc2.ea5054d4dc.js" as="script">
+<link rel="preload" href="/agentic-reviewer/static/js/async/route-83551b474dc2.886b80c063.js" as="script">
 <script defer src="/agentic-reviewer/static/js/styles.1f3e3d1397.js"></script>
 <script defer src="/agentic-reviewer/static/js/lib-react.c6605dc143.js"></script>
 <script defer src="/agentic-reviewer/static/js/lib-router.441d35dbfe.js"></script>
 <script defer src="/agentic-reviewer/static/js/697.b9b029c6ef.js"></script>
-<script defer src="/agentic-reviewer/static/js/index.40cbd9e5b0.js"></script>
+<script defer src="/agentic-reviewer/static/js/index.5b61a14a46.js"></script>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Rspress v2.0.19">
 <meta name="theme-color" content="#171412">
@@ -60,6 +60,7 @@
 <h2 class="rp-toc-include" id="no-retry-after-ambiguity"><a href="#no-retry-after-ambiguity" class="rp-header-anchor rp-link" aria-hidden="true">#</a>no retry after ambiguity</h2>
 <p>外部写调用存在经典不确定性：请求可能已经到达目标，但 response 在返回途中丢失。此时 Reviewer 记录精确 ambiguity stage，并进入 <code>unknown</code>，不自动重试。</p>
 <p>自动重试只适用于能够证明 <code>not attempted</code> 的结果。这个区分防止一个 interrupt、response 或未来 mutation 被执行两次。</p>
+<p>进程终止也不会把 SIGTERM accepted 当作成功。managed child 的 gateway 先绑定当前 connection、exact process 与 runtime revision；observed/unmanaged gateway 绑定独立的 exact kernel capability。两者都进入 <code>verifying</code>，只有 boot/PID/start identity 消失才形成 terminal proof。批准后的 managed stop 不会自动拉起 replacement。</p>
 <h2 class="rp-toc-include" id="route-bound-生命周期通知"><a href="#route-bound-生命周期通知" class="rp-header-anchor rp-link" aria-hidden="true">#</a>route bound 生命周期通知</h2>
 <p>来自 verified IM 的 approve 决定会绑定原 sender 与 conversation route。后续 <code>Verifying</code>、<code>Succeeded</code>、<code>Failed</code>、<code>Stale</code>、<code>Expired</code> 或 <code>Unknown</code> 通知只回到这个 exact route，不会广播给后来订阅的人。</p>
 <p>中间事件若已经落后于 canonical aggregate，会被 projector 抑制。通知系统不能审批、dispatch、retry 或 verify。</p>
